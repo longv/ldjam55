@@ -59,7 +59,7 @@ func _process(delta):
 			win_hud.get_node("Tenth").texture = tenth
 			set_done_time = true
 		if Input.is_action_just_pressed("ui_accept"):
-			get_tree().change_scene_to_file("res://main.tscn")
+			get_tree().change_scene_to_file("res://levels/main.tscn")
 		return
 
 	remaining_time -= delta
