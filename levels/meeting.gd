@@ -16,6 +16,7 @@ var acceptable_input: Array[int] = []
 ## Number of seconds delay before new task is given
 @onready var task_delay: float = DELAY
 @onready var is_done: bool = false
+@onready var kuchi: CharacterBody2D = get_node("Kuchi")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -45,6 +46,7 @@ func _unhandled_input(event):
 			if _is_work_correct(work, task, true):
 				print("Task completed successfully")
 				is_done = true
+				kuchi.send_task()
 			work.clear()
 			return
 		if acceptable_input.has(event.keycode):

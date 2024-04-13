@@ -10,7 +10,8 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @onready var anim = get_node("AnimationPlayer")
 @onready var state = STATE.IDLE
-
+@onready var task_scene = load("res://objects/task.tscn")
+@onready var task_appear: Node2D = get_node("TaskAppear")
 
 func _ready():
 	anim.play("idle")
@@ -38,3 +39,9 @@ func _physics_process(delta):
 		anim.play("idle")
 
 	move_and_slide()
+
+func send_task():
+	print(position)
+	var task = task_scene.instantiate()
+	task.position = task_appear.position
+	call_deferred("add_child", task)
