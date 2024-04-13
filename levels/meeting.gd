@@ -27,6 +27,14 @@ func _ready():
 	print("Acceptable inputs:")
 	_print_keys_name(acceptable_input)
 	task = _get_new_task()
+	print(get_tree().current_scene)
+	print("res://characters/enemies/annoying_colleagues/%s.tscn" % SceneSwitcher.annoyance)
+	var enemy = load("res://characters/enemies/annoying_colleagues/%s.tscn" % SceneSwitcher.annoyance).instantiate()
+	enemy.position = Vector2(1062, 0)
+	enemy.scale = Vector2(5, 5)
+	call_deferred("add_child", enemy)
+	
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
