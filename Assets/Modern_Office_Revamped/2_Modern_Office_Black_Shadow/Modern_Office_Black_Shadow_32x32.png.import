@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bt6q1tfj5udmn"
-path="res://.godot/imported/Modern_Office_Black_Shadow_32x32.png-39d8a9961ff18bf1d1f07f63399f48dd.ctex"
+path="res://.godot/imported/Modern_Office_Black_Shadow_32x32.png-1adbdf7e46fa33b9d9382842fd730e1f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Modern_Office_Revamped/2_Modern_Office_Black_Shadow/Modern_Office_Black_Shadow_32x32.png"
-dest_files=["res://.godot/imported/Modern_Office_Black_Shadow_32x32.png-39d8a9961ff18bf1d1f07f63399f48dd.ctex"]
+source_file="res://assets/Modern_Office_Revamped/2_Modern_Office_Black_Shadow/Modern_Office_Black_Shadow_32x32.png"
+dest_files=["res://.godot/imported/Modern_Office_Black_Shadow_32x32.png-1adbdf7e46fa33b9d9382842fd730e1f.ctex"]
 
 [params]
 
