@@ -1,21 +1,26 @@
 extends CharacterBody2D
 
 
-@export var target: Node2D
 @export var speed = 300.0
 
 @onready var anim_tree = $AnimationTree
-@onready var nav_agent = $Navigation/NavigationAgent2D
 
 
 func _process(delta):
 	_update_anim()
 
 func _physics_process(delta):
-	var direction = nav_agent.get_next_path_position() - global_position
-	direction = direction.normalized()
+	var h_direction = Input.get_axis("ui_left", "ui_right")
+	if h_direction && velocity.y == 0:
+		velocity.x = h_direction * speed
+	else:
+		velocity.x = move_toward(velocity.x, 0, speed)
 
-	velocity = velocity.lerp(direction * speed, 7 * delta)
+	var v_direction = Input.get_axis("ui_up", "ui_down")
+	if v_direction && velocity.x == 0:
+		velocity.y = v_direction * speed
+	else:
+		velocity.y = move_toward(velocity.y, 0, speed)
 
 	move_and_slide()
 
@@ -26,7 +31,3 @@ func _update_anim():
 
 	anim_tree["parameters/conditions/idling"] = velocity == Vector2.ZERO
 	anim_tree["parameters/conditions/moving"] = velocity != Vector2.ZERO
-
-
-func _on_timer_timeout():
-	nav_agent.target_position = target.global_position
