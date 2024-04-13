@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmd4csuvae3hg"
-path="res://.godot/imported/Room_Builder_Office_16x16.png-3a76b84362a8e4f1dc2b5e3b9dd1f44a.ctex"
+path="res://.godot/imported/Room_Builder_Office_16x16.png-c2213e8a584331d35105577b751d3b8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Modern_Office_Revamped/1_Room_Builder_Office/Room_Builder_Office_16x16.png"
-dest_files=["res://.godot/imported/Room_Builder_Office_16x16.png-3a76b84362a8e4f1dc2b5e3b9dd1f44a.ctex"]
+source_file="res://Assets/Modern_Office_Revamped/1_Room_Builder_Office/Room_Builder_Office_16x16.png"
+dest_files=["res://.godot/imported/Room_Builder_Office_16x16.png-c2213e8a584331d35105577b751d3b8b.ctex"]
 
 [params]
 

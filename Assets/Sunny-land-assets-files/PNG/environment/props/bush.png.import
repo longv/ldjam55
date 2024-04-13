@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kk40lvnhtsp1"
-path="res://.godot/imported/bush.png-06f557f2079491899b18b4f8b315da8d.ctex"
+path="res://.godot/imported/bush.png-9fe64a8dbb8719b0a1d14bad70400e80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sunny-land-assets-files/PNG/environment/props/bush.png"
-dest_files=["res://.godot/imported/bush.png-06f557f2079491899b18b4f8b315da8d.ctex"]
+source_file="res://Assets/Sunny-land-assets-files/PNG/environment/props/bush.png"
+dest_files=["res://.godot/imported/bush.png-9fe64a8dbb8719b0a1d14bad70400e80.ctex"]
 
 [params]
 
