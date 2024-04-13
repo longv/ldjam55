@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://didmypit8q14"
-path="res://.godot/imported/Office_walls_floors_48x48.png-ff10c734a3224c2b26d6e31485c82b79.ctex"
+path="res://.godot/imported/Office_walls_floors_48x48.png-b9e3e4fa804e55983552ce82298f082c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Modern_Office_Revamped/7_Modern_Office_Previous_Version/Modern_Office_old/Upscaled_versions/Office_walls_floors_48x48.png"
-dest_files=["res://.godot/imported/Office_walls_floors_48x48.png-ff10c734a3224c2b26d6e31485c82b79.ctex"]
+source_file="res://Assets/Modern_Office_Revamped/7_Modern_Office_Previous_Version/Modern_Office_old/Upscaled_versions/Office_walls_floors_48x48.png"
+dest_files=["res://.godot/imported/Office_walls_floors_48x48.png-b9e3e4fa804e55983552ce82298f082c.ctex"]
 
 [params]
 

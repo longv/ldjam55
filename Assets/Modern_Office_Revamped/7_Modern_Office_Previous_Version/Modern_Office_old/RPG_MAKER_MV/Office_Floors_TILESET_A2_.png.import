@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pwp5p0qj51nc"
-path="res://.godot/imported/Office_Floors_TILESET_A2_.png-3b9cfdc4bc07d09e7c330dc788f9db84.ctex"
+path="res://.godot/imported/Office_Floors_TILESET_A2_.png-fc11eafada0e58efd92ad965da22e3bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Modern_Office_Revamped/7_Modern_Office_Previous_Version/Modern_Office_old/RPG_MAKER_MV/Office_Floors_TILESET_A2_.png"
-dest_files=["res://.godot/imported/Office_Floors_TILESET_A2_.png-3b9cfdc4bc07d09e7c330dc788f9db84.ctex"]
+source_file="res://Assets/Modern_Office_Revamped/7_Modern_Office_Previous_Version/Modern_Office_old/RPG_MAKER_MV/Office_Floors_TILESET_A2_.png"
+dest_files=["res://.godot/imported/Office_Floors_TILESET_A2_.png-fc11eafada0e58efd92ad965da22e3bf.ctex"]
 
 [params]
 
