@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+class_name TaskCombat
+
 var speed: float = 800.0
 var timer: float = 4.0
 var tshirt_size: int = 3

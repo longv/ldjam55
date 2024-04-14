@@ -1,4 +1,4 @@
-extends "res://characters/enemies/annoying_colleagues/colleague.gd"
+extends ColleagueCombat
 
  
 func _ready():

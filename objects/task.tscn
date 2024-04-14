@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dolnh0odmgyvw"]
 
-[ext_resource type="Texture2D" uid="uid://bbcq7rn68na1m" path="res://icon.svg" id="1_cta2p"]
 [ext_resource type="Script" path="res://objects/task.gd" id="1_urkrd"]
+[ext_resource type="Texture2D" uid="uid://b1kl87v18q4d2" path="res://objects/assets/Modern_Office_Singles_32x32_156.png" id="2_ky17o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4visr"]
 radius = 4.0
@@ -18,8 +18,9 @@ script = ExtResource("1_urkrd")
 shape = SubResource("CircleShape2D_4visr")
 
 [node name="Sprite" type="Sprite2D" parent="Shape"]
-scale = Vector2(0.05, 0.05)
-texture = ExtResource("1_cta2p")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_ky17o")
+offset = Vector2(16, -30)
 
 [node name="Hitbox" type="Area2D" parent="."]
 collision_layer = 2

@@ -185,4 +185,4 @@ libraries = {
 }
 
 [node name="TaskAppear" type="Node2D" parent="."]
-position = Vector2(12, 8)
+position = Vector2(30, 8)
