@@ -22,13 +22,14 @@ var key_map = {}
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	vim_mode = true
 	if vim_mode:
 		acceptable_input = CHAD_INPUTS
 		key_map = {
-			"K": load("res://ui/hud/assets/keyboard_k.png"),
-			"J": load("res://ui/hud/assets/keyboard_j.png"),
-			"H": load("res://ui/hud/assets/keyboard_h.png"),
-			"L": load("res://ui/hud/assets/keyboard_l.png"),
+			"K": load("res://ui/hud/assets/keyboard_arrow_up.png"),
+			"J": load("res://ui/hud/assets/keyboard_arrow_down.png"),
+			"H": load("res://ui/hud/assets/keyboard_arrow_left.png"),
+			"L": load("res://ui/hud/assets/keyboard_arrow_right.png"),
 		}
 	else:
 		acceptable_input = CONVENTIONAL_INPUTS
@@ -71,7 +72,7 @@ func _unhandled_input(event):
 			if _is_work_correct(true):
 				print("Task completed successfully")
 				is_done = true
-				kuchi.send_task()
+				kuchi.send_task(task.size())
 				_clear_task_hud()
 			work.clear()
 		elif acceptable_input.has(event.keycode):

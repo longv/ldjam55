@@ -10,7 +10,7 @@ radius = 4.0
 radius = 4.0
 
 [node name="Task" type="CharacterBody2D"]
-collision_layer = 2
+collision_layer = 0
 collision_mask = 2
 script = ExtResource("1_urkrd")
 
@@ -22,8 +22,11 @@ scale = Vector2(0.05, 0.05)
 texture = ExtResource("1_cta2p")
 
 [node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 3
 
 [node name="Shape" type="CollisionShape2D" parent="Hitbox"]
 shape = SubResource("CircleShape2D_gktxj")
 
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
