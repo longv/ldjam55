@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dodjhx85pvu8y"]
+[gd_scene load_steps=7 format=3 uid="uid://dodjhx85pvu8y"]
 
 [ext_resource type="Texture2D" uid="uid://cnm6188k6yh2j" path="res://Assets/Modern_Office_Revamped/3_Modern_Office_Shadowless/Modern_Office_Shadowless_48x48.png" id="1_gwrqv"]
 [ext_resource type="Script" path="res://levels/meeting.gd" id="1_tpixr"]
 [ext_resource type="PackedScene" uid="uid://c8r31sn518imi" path="res://characters/player/kuchi_the_salary_man/kuchi.tscn" id="2_xxawq"]
+[ext_resource type="PackedScene" uid="uid://cv43kbgsxwa3o" path="res://ui/hud/TaskHud.tscn" id="4_c0mp8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5shr3"]
 texture = ExtResource("1_gwrqv")
@@ -2615,3 +2616,7 @@ layer_0/tile_data = PackedInt32Array(131071, 393219, 0, 65536, 458755, 0, 65537,
 [node name="Kuchi" parent="." instance=ExtResource("2_xxawq")]
 position = Vector2(90, 0)
 scale = Vector2(5, 5)
+
+[node name="TaskHud" parent="." instance=ExtResource("4_c0mp8")]
+offset = Vector2(576, 380)
+transform = Transform2D(1, 0, 0, 1, 576, 380)
