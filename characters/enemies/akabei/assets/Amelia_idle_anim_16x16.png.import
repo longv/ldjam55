@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cggcf6e1033w5"
-path="res://.godot/imported/Amelia_run_16x16.png-1697fe6d272795cc56dcc9f2ad511fca.ctex"
+uid="uid://b8sjm7ryv58qu"
+path="res://.godot/imported/Amelia_idle_anim_16x16.png-b83f0b85ca81dd06f0855fc9fce37b89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Modern tiles_Free/Characters_free/Amelia_run_16x16.png"
-dest_files=["res://.godot/imported/Amelia_run_16x16.png-1697fe6d272795cc56dcc9f2ad511fca.ctex"]
+source_file="res://characters/enemies/akabei/assets/Amelia_idle_anim_16x16.png"
+dest_files=["res://.godot/imported/Amelia_idle_anim_16x16.png-b83f0b85ca81dd06f0855fc9fce37b89.ctex"]
 
 [params]
 
