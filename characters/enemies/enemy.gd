@@ -39,6 +39,13 @@ func _update_anim():
 	anim_tree["parameters/conditions/idling"] = velocity == Vector2.ZERO
 	anim_tree["parameters/conditions/moving"] = velocity != Vector2.ZERO
 
+func change_mode_to(mode: Mode) -> bool:
+	if current_mode == Mode.FRIGHTENED:
+		return false
+	else:
+		current_mode = mode
+		return true
+
 func _get_target_position():
 	pass
 

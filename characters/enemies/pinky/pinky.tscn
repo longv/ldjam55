@@ -391,5 +391,4 @@ script = ExtResource("2_p4y8h")
 sprite_frames = SubResource("SpriteFrames_qs5e8")
 
 [node name="NavigationAgent2D" parent="Navigation" index="0"]
-debug_enabled = true
 debug_path_custom_color = Color(0.929412, 0, 0.94902, 1)
