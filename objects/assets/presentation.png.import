@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1kl87v18q4d2"
-path="res://.godot/imported/Modern_Office_Singles_32x32_156.png-56cb5f6b462dc9bcafc403e99a4fe94d.ctex"
+uid="uid://bmgd81g6kcp2k"
+path="res://.godot/imported/presentation.png-c258ae73809b6c79886da270f4877c89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://objects/assets/Modern_Office_Singles_32x32_156.png"
-dest_files=["res://.godot/imported/Modern_Office_Singles_32x32_156.png-56cb5f6b462dc9bcafc403e99a4fe94d.ctex"]
+source_file="res://objects/assets/presentation.png"
+dest_files=["res://.godot/imported/presentation.png-c258ae73809b6c79886da270f4877c89.ctex"]
 
 [params]
 
