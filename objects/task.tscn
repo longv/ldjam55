@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dolnh0odmgyvw"]
 
-[ext_resource type="Texture2D" uid="uid://bbcq7rn68na1m" path="res://icon.svg" id="1_cta2p"]
 [ext_resource type="Script" path="res://objects/task.gd" id="1_urkrd"]
+[ext_resource type="Texture2D" uid="uid://bmgd81g6kcp2k" path="res://objects/assets/presentation.png" id="2_shenb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4visr"]
 radius = 4.0
@@ -10,7 +10,7 @@ radius = 4.0
 radius = 4.0
 
 [node name="Task" type="CharacterBody2D"]
-collision_layer = 2
+collision_layer = 0
 collision_mask = 2
 script = ExtResource("1_urkrd")
 
@@ -18,12 +18,16 @@ script = ExtResource("1_urkrd")
 shape = SubResource("CircleShape2D_4visr")
 
 [node name="Sprite" type="Sprite2D" parent="Shape"]
-scale = Vector2(0.05, 0.05)
-texture = ExtResource("1_cta2p")
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_shenb")
+offset = Vector2(16, -30)
 
 [node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 3
 
 [node name="Shape" type="CollisionShape2D" parent="Hitbox"]
 shape = SubResource("CircleShape2D_gktxj")
 
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

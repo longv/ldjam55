@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dm6nhw53y3hox"
-path="res://.godot/imported/Adam_idle_16x16.png-7b98f9957cf282fdae4e4d05dc00958c.ctex"
+uid="uid://b1kl87v18q4d2"
+path="res://.godot/imported/task_pile.png-1d7caee2fb2d070448e29ee120f914e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/player/kuchi_the_salary_man/assets/Adam_idle_16x16.png"
-dest_files=["res://.godot/imported/Adam_idle_16x16.png-7b98f9957cf282fdae4e4d05dc00958c.ctex"]
+source_file="res://objects/assets/task_pile.png"
+dest_files=["res://.godot/imported/task_pile.png-1d7caee2fb2d070448e29ee120f914e2.ctex"]
 
 [params]
 

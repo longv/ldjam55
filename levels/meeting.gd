@@ -17,18 +17,19 @@ var key_map = {}
 ## Number of seconds delay before new task is given
 @onready var task_delay: float = DELAY
 @onready var is_done: bool = true
-@onready var kuchi: CharacterBody2D = get_node("Kuchi")
-@onready var task_hud: CanvasLayer = get_node("TaskHud")
+@onready var kuchi: Kuchi = $Kuchi
+@onready var task_hud: CanvasLayer = $TaskHud
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	vim_mode = false
 	if vim_mode:
 		acceptable_input = CHAD_INPUTS
 		key_map = {
-			"K": load("res://ui/hud/assets/keyboard_k.png"),
-			"J": load("res://ui/hud/assets/keyboard_j.png"),
-			"H": load("res://ui/hud/assets/keyboard_h.png"),
-			"L": load("res://ui/hud/assets/keyboard_l.png"),
+			"K": load("res://ui/hud/assets/keyboard_arrow_up.png"),
+			"J": load("res://ui/hud/assets/keyboard_arrow_down.png"),
+			"H": load("res://ui/hud/assets/keyboard_arrow_left.png"),
+			"L": load("res://ui/hud/assets/keyboard_arrow_right.png"),
 		}
 	else:
 		acceptable_input = CONVENTIONAL_INPUTS
@@ -42,9 +43,6 @@ func _ready():
 	## Instantiate tasks
 	print("Acceptable inputs:")
 	_print_keys_name(acceptable_input)
-	# task = _get_new_task()
-	# _handle_task_hud(task_hud, task, work)
-
 
 	## Add enemy dynamically
 	var enemy = load("res://characters/enemies/annoying_colleagues/%s.tscn" % SceneSwitcher.annoyance).instantiate()
@@ -71,18 +69,13 @@ func _unhandled_input(event):
 			if _is_work_correct(true):
 				print("Task completed successfully")
 				is_done = true
-				kuchi.send_task()
+				kuchi.send_task(task.size())
 				_clear_task_hud()
 			work.clear()
 		elif acceptable_input.has(event.keycode):
 			work.append(event.keycode)
-			# if not _is_work_correct():
-			# 	print("Wrong step")
-			# 	work.clear()
-			# call_deferred("_handle_task_hud", task_hud, task, work)
 		else:
 			print("Illegal input")
-			# work.clear()
 		_handle_task_hud()
 
 ## Print human readable name of the keycodes

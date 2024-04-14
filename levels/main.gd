@@ -21,12 +21,14 @@ func _on_quit_pressed():
 func _on_play_pressed():
 	# get_tree().change_scene_to_file("res://levels/meeting.tscn")
 	# var s = ResourceLoader.load("res://levels/meeting.tscn")
-	if SceneSwitcher.annoyance == "colleague":
-		SceneSwitcher.annoyance = "akabei"
-	elif SceneSwitcher.annoyance == "akabei":
+	if SceneSwitcher.annoyance == "akabei":
+		SceneSwitcher.annoyance = "pinky"
+	elif SceneSwitcher.annoyance == "pinky":
 		SceneSwitcher.annoyance = "aosuke"
+	elif SceneSwitcher.annoyance == "aosuke":
+		SceneSwitcher.annoyance = "guzuta"
 	else:
-		SceneSwitcher.annoyance = "colleague"
+		SceneSwitcher.annoyance = "akabei"
 	SceneSwitcher.goto_scene("res://levels/meeting.tscn")	
 
 

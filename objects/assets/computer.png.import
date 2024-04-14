@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://obnwve3rbvvj"
-path="res://.godot/imported/Alex_sit_16x16.png-ad6f1c5729d3c4c728dec765ac50d6b4.ctex"
+uid="uid://dvoda2kajgj2d"
+path="res://.godot/imported/computer.png-beb989c56c3161213a675872379f822d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/enemies/annoying_colleagues/assets/Alex_sit_16x16.png"
-dest_files=["res://.godot/imported/Alex_sit_16x16.png-ad6f1c5729d3c4c728dec765ac50d6b4.ctex"]
+source_file="res://objects/assets/computer.png"
+dest_files=["res://.godot/imported/computer.png-beb989c56c3161213a675872379f822d.ctex"]
 
 [params]
 

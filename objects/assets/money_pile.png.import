@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtwfj2wlga6ha"
-path="res://.godot/imported/Alex_sit3_16x16.png-8138002e06ff2af5dd53d7ede5e44b05.ctex"
+uid="uid://dt1gonlopdr3"
+path="res://.godot/imported/money_pile.png-fdc0879f2e6918b4fd651ae0062a8111.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/enemies/annoying_colleagues/assets/Alex_sit3_16x16.png"
-dest_files=["res://.godot/imported/Alex_sit3_16x16.png-8138002e06ff2af5dd53d7ede5e44b05.ctex"]
+source_file="res://objects/assets/money_pile.png"
+dest_files=["res://.godot/imported/money_pile.png-fdc0879f2e6918b4fd651ae0062a8111.ctex"]
 
 [params]
 
