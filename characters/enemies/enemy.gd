@@ -1,6 +1,7 @@
 extends CharacterBody2D
 class_name Enemy
 
+
 @export var speed = 300.0
 @export var acceleration = 7
 
@@ -30,7 +31,11 @@ func _update_anim():
 	anim_tree["parameters/conditions/idling"] = velocity == Vector2.ZERO
 	anim_tree["parameters/conditions/moving"] = velocity != Vector2.ZERO
 
+func _get_target_position():
+	pass
 
 func _on_timer_timeout():
 	if target:
-		nav_agent.target_position = target.global_position
+		var target_position = _get_target_position()
+		if target_position:
+			nav_agent.target_position = target_position
