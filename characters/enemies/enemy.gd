@@ -2,8 +2,16 @@ extends CharacterBody2D
 class_name Enemy
 
 
+enum Mode {
+	CHASE,
+	SCATTER,
+	FRIGHTENED
+}
+
 @export var speed = 300.0
 @export var acceleration = 7
+
+var current_mode = Mode.CHASE
 
 @onready var target = %KuchiNorm
 @onready var anim_tree = $AnimationTree
