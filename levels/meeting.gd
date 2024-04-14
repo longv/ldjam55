@@ -25,18 +25,18 @@ func _ready():
 	if vim_mode:
 		acceptable_input = CHAD_INPUTS
 		key_map = {
-			"K": load("res://ui/hud/keyboard_k.png"),
-			"J": load("res://ui/hud/keyboard_j.png"),
-			"H": load("res://ui/hud/keyboard_h.png"),
-			"L": load("res://ui/hud/keyboard_l.png"),
+			"K": load("res://ui/hud/assets/keyboard_k.png"),
+			"J": load("res://ui/hud/assets/keyboard_j.png"),
+			"H": load("res://ui/hud/assets/keyboard_h.png"),
+			"L": load("res://ui/hud/assets/keyboard_l.png"),
 		}
 	else:
 		acceptable_input = CONVENTIONAL_INPUTS
 		key_map = {
-			"Up": load("res://ui/hud/keyboard_arrow_up.png"),
-			"Down": load("res://ui/hud/keyboard_arrow_down.png"),
-			"Left": load("res://ui/hud/keyboard_arrow_left.png"),
-			"Right": load("res://ui/hud/keyboard_arrow_right.png"),
+			"Up": load("res://ui/hud/assets/keyboard_arrow_up.png"),
+			"Down": load("res://ui/hud/assets/keyboard_arrow_down.png"),
+			"Left": load("res://ui/hud/assets/keyboard_arrow_left.png"),
+			"Right": load("res://ui/hud/assets/keyboard_arrow_right.png"),
 		}
 
 	## Instantiate tasks

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hxo1c5qs63tq"
-path="res://.godot/imported/keyboard_arrow_right.png-711c1b6eb112ec2b822b0670d8ef32f5.ctex"
+uid="uid://cndsa2qwn18hd"
+path="res://.godot/imported/Alex_run_16x16.png-2ceff981d1269c5f42f1debc4f82ebc5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/hud/keyboard_arrow_right.png"
-dest_files=["res://.godot/imported/keyboard_arrow_right.png-711c1b6eb112ec2b822b0670d8ef32f5.ctex"]
+source_file="res://characters/enemies/annoying_colleagues/assets/Alex_run_16x16.png"
+dest_files=["res://.godot/imported/Alex_run_16x16.png-2ceff981d1269c5f42f1debc4f82ebc5.ctex"]
 
 [params]
 

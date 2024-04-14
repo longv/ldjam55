@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cx7y6swgqwxjx"
-path="res://.godot/imported/Alex_idle_anim_16x16.png-c5bae99d5307d053b7b03d44e814037f.ctex"
+uid="uid://bpyjts7yej2w0"
+path="res://.godot/imported/Adam_16x16.png-a3390051db3487182f0eb997ad2ddee5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/enemies/annoying_colleagues/Alex_idle_anim_16x16.png"
-dest_files=["res://.godot/imported/Alex_idle_anim_16x16.png-c5bae99d5307d053b7b03d44e814037f.ctex"]
+source_file="res://characters/player/kuchi_the_salary_man/assets/Adam_16x16.png"
+dest_files=["res://.godot/imported/Adam_16x16.png-a3390051db3487182f0eb997ad2ddee5.ctex"]
 
 [params]
 

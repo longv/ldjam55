@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0v7q66qr64um"
-path="res://.godot/imported/Adam_run_16x16.png-a6bc71d6252b4516b2924f6a34c4b780.ctex"
+uid="uid://cs7mwc2lsvl85"
+path="res://.godot/imported/Alex_phone_16x16.png-bcf6cabefb106500c377ce510b194abd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/player/kuchi_the_salary_man/Adam_run_16x16.png"
-dest_files=["res://.godot/imported/Adam_run_16x16.png-a6bc71d6252b4516b2924f6a34c4b780.ctex"]
+source_file="res://characters/enemies/annoying_colleagues/assets/Alex_phone_16x16.png"
+dest_files=["res://.godot/imported/Alex_phone_16x16.png-bcf6cabefb106500c377ce510b194abd.ctex"]
 
 [params]
 

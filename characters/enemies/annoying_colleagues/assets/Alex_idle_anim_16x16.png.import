@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtwfj2wlga6ha"
-path="res://.godot/imported/Alex_sit3_16x16.png-98b6cb6435f70d2129caba93ccb94e87.ctex"
+uid="uid://cx7y6swgqwxjx"
+path="res://.godot/imported/Alex_idle_anim_16x16.png-7169f0a5a917214774f322b4bbe9a89c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/enemies/annoying_colleagues/Alex_sit3_16x16.png"
-dest_files=["res://.godot/imported/Alex_sit3_16x16.png-98b6cb6435f70d2129caba93ccb94e87.ctex"]
+source_file="res://characters/enemies/annoying_colleagues/assets/Alex_idle_anim_16x16.png"
+dest_files=["res://.godot/imported/Alex_idle_anim_16x16.png-7169f0a5a917214774f322b4bbe9a89c.ctex"]
 
 [params]
 

@@ -1,8 +1,8 @@
 [gd_scene load_steps=20 format=3 uid="uid://txs8m7b7ovxs"]
 
 [ext_resource type="PackedScene" uid="uid://bdvo5tppttsm1" path="res://characters/enemies/annoying_colleagues/colleague.tscn" id="1_enadl"]
-[ext_resource type="Texture2D" uid="uid://cx7y6swgqwxjx" path="res://characters/enemies/annoying_colleagues/Alex_idle_anim_16x16.png" id="2_ifiq8"]
-[ext_resource type="Texture2D" uid="uid://cndsa2qwn18hd" path="res://characters/enemies/annoying_colleagues/Alex_run_16x16.png" id="3_kkt7d"]
+[ext_resource type="Texture2D" uid="uid://cx7y6swgqwxjx" path="res://characters/enemies/annoying_colleagues/assets/Alex_idle_anim_16x16.png" id="2_ifiq8"]
+[ext_resource type="Texture2D" uid="uid://cndsa2qwn18hd" path="res://characters/enemies/annoying_colleagues/assets/Alex_run_16x16.png" id="3_kkt7d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ykaev"]
 atlas = ExtResource("2_ifiq8")

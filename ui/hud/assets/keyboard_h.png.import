@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0lpwmboohmur"
-path="res://.godot/imported/Adam_phone_16x16.png-d459c57c6d515e8bc3eb16b181ae8055.ctex"
+uid="uid://drsqkbuenpqbx"
+path="res://.godot/imported/keyboard_h.png-11c58cd7502b9d3268c7d00b8b6c36ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/player/kuchi_the_salary_man/Adam_phone_16x16.png"
-dest_files=["res://.godot/imported/Adam_phone_16x16.png-d459c57c6d515e8bc3eb16b181ae8055.ctex"]
+source_file="res://ui/hud/assets/keyboard_h.png"
+dest_files=["res://.godot/imported/keyboard_h.png-11c58cd7502b9d3268c7d00b8b6c36ae.ctex"]
 
 [params]
 

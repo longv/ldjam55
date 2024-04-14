@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cv43kbgsxwa3o"]
 
-[ext_resource type="Texture2D" uid="uid://jjjinbs5gtpf" path="res://ui/hud/keyboard_arrow_up.png" id="1_1lit8"]
+[ext_resource type="Texture2D" uid="uid://jjjinbs5gtpf" path="res://ui/hud/assets/keyboard_arrow_up.png" id="1_g0xor"]
 
 [node name="TaskHud" type="CanvasLayer"]
 
@@ -8,51 +8,51 @@
 visible = false
 position = Vector2(-194, 2.08165e-12)
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_1lit8")
+texture = ExtResource("1_g0xor")
 
 [node name="2nd" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(-144, 2.08165e-12)
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_1lit8")
+texture = ExtResource("1_g0xor")
 
 [node name="3rd" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(-96, 2.08165e-12)
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_1lit8")
+texture = ExtResource("1_g0xor")
 
 [node name="4th" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(-48, 2.08165e-12)
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_1lit8")
+texture = ExtResource("1_g0xor")
 
 [node name="5th" type="Sprite2D" parent="."]
 visible = false
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_1lit8")
+texture = ExtResource("1_g0xor")
 
 [node name="6th" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(48, 2.08165e-12)
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_1lit8")
+texture = ExtResource("1_g0xor")
 
 [node name="7th" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(96, 2.08165e-12)
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_1lit8")
+texture = ExtResource("1_g0xor")
 
 [node name="8th" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(144, 2.08165e-12)
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_1lit8")
+texture = ExtResource("1_g0xor")
 
 [node name="9th" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(194, 2.08165e-12)
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_1lit8")
+texture = ExtResource("1_g0xor")

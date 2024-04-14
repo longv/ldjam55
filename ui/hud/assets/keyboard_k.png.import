@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djfufbr2d13in"
-path="res://.godot/imported/Alex_sit2_16x16.png-24d92d9a6a84bfbcb6c9a2cfb45709d5.ctex"
+uid="uid://dusk6o4wt1qwf"
+path="res://.godot/imported/keyboard_k.png-cb81c75df037a081ea30a2c5b3faadcd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/enemies/annoying_colleagues/Alex_sit2_16x16.png"
-dest_files=["res://.godot/imported/Alex_sit2_16x16.png-24d92d9a6a84bfbcb6c9a2cfb45709d5.ctex"]
+source_file="res://ui/hud/assets/keyboard_k.png"
+dest_files=["res://.godot/imported/keyboard_k.png-cb81c75df037a081ea30a2c5b3faadcd.ctex"]
 
 [params]
 

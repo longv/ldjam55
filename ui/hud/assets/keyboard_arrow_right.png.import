@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ex382yy63yfe"
-path="res://.godot/imported/Alex_idle_16x16.png-7b4fea920fe34395f78c137d34a8291c.ctex"
+uid="uid://hxo1c5qs63tq"
+path="res://.godot/imported/keyboard_arrow_right.png-ed1c3ffa4ad37a17bea0a6dc940699bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/enemies/annoying_colleagues/Alex_idle_16x16.png"
-dest_files=["res://.godot/imported/Alex_idle_16x16.png-7b4fea920fe34395f78c137d34a8291c.ctex"]
+source_file="res://ui/hud/assets/keyboard_arrow_right.png"
+dest_files=["res://.godot/imported/keyboard_arrow_right.png-ed1c3ffa4ad37a17bea0a6dc940699bb.ctex"]
 
 [params]
 
