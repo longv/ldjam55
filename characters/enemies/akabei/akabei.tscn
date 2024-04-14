@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=3 uid="uid://c7u65acrpd0bp"]
+[gd_scene load_steps=78 format=3 uid="uid://c7u65acrpd0bp"]
 
 [ext_resource type="Script" path="res://characters/enemies/akabei/akabei.gd" id="1_2c6xu"]
 [ext_resource type="Texture2D" uid="uid://guvhrn1mtcpu" path="res://characters/enemies/akabei/assets/Akabei.png" id="2_5hko8"]
@@ -727,6 +727,10 @@ states/Run/node = SubResource("AnimationNodeBlendSpace2D_6vesd")
 states/Run/position = Vector2(520, 99.875)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_axrs0"), "Idle", "Run", SubResource("AnimationNodeStateMachineTransition_lwwgx"), "Run", "Idle", SubResource("AnimationNodeStateMachineTransition_shyno")]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m04ch"]
+radius = 7.0
+height = 17.0
+
 [node name="Akabei" type="CharacterBody2D"]
 scale = Vector2(2, 2)
 collision_layer = 2
@@ -771,4 +775,11 @@ debug_path_custom_color = Color(1, 0, 0, 1)
 wait_time = 0.1
 autostart = true
 
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, 8)
+shape = SubResource("CapsuleShape2D_m04ch")
+
 [connection signal="timeout" from="Navigation/Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
