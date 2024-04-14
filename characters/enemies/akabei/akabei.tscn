@@ -724,7 +724,7 @@ states/Run/position = Vector2(520, 99.875)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_axrs0"), "Idle", "Run", SubResource("AnimationNodeStateMachineTransition_lwwgx"), "Run", "Idle", SubResource("AnimationNodeStateMachineTransition_shyno")]
 
 [node name="Akabei" type="CharacterBody2D"]
-scale = Vector2(3, 3)
+scale = Vector2(2, 2)
 script = ExtResource("1_2c6xu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -756,6 +756,7 @@ parameters/Run/blend_position = Vector2(0, 0)
 [node name="Navigation" type="Node2D" parent="."]
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="Navigation"]
+path_postprocessing = 1
 
 [node name="Timer" type="Timer" parent="Navigation"]
 wait_time = 0.1

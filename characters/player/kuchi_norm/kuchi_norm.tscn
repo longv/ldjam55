@@ -1,6 +1,6 @@
 [gd_scene load_steps=78 format=3 uid="uid://c08f5hkg6wfgi"]
 
-[ext_resource type="Script" path="res://characters/player/kuchi/kuchi2.gd" id="1_rcivx"]
+[ext_resource type="Script" path="res://characters/player/kuchi_norm/kuchi_norm.gd" id="1_rcivx"]
 [ext_resource type="Texture2D" uid="uid://ysai7hkd5kbm" path="res://assets/Modern tiles_Free/Characters_free/Adam_idle_anim_16x16.png" id="2_1uy8i"]
 [ext_resource type="Texture2D" uid="uid://qar1yl1slphg" path="res://assets/Modern tiles_Free/Characters_free/Adam_run_16x16.png" id="3_vscjh"]
 
@@ -723,8 +723,9 @@ states/Run/node = SubResource("AnimationNodeBlendSpace2D_6vesd")
 states/Run/position = Vector2(520, 99.875)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_axrs0"), "Idle", "Run", SubResource("AnimationNodeStateMachineTransition_lwwgx"), "Run", "Idle", SubResource("AnimationNodeStateMachineTransition_shyno")]
 
-[node name="Kuchi2" type="CharacterBody2D"]
-scale = Vector2(3, 3)
+[node name="KuchiNorm" type="CharacterBody2D"]
+scale = Vector2(2, 2)
+collision_mask = 6
 script = ExtResource("1_rcivx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

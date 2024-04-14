@@ -1,21 +1,22 @@
 extends CharacterBody2D
 
 
-@export var target: Node2D
 @export var speed = 300.0
+@export var acceleration = 7
 
+@onready var target = %KuchiNorm
 @onready var anim_tree = $AnimationTree
 @onready var nav_agent = $Navigation/NavigationAgent2D
 
 
-func _process(delta):
+func _process(_delta):
 	_update_anim()
 
 func _physics_process(delta):
 	var direction = nav_agent.get_next_path_position() - global_position
 	direction = direction.normalized()
 
-	velocity = velocity.lerp(direction * speed, 7 * delta)
+	velocity = velocity.lerp(direction * speed, acceleration * delta)
 
 	move_and_slide()
 
