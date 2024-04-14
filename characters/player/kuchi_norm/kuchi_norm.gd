@@ -1,8 +1,12 @@
 extends CharacterBody2D
+class_name KuchiNorm
 
 
 @export var speed = 300.0
 @export var accelaration = 7.0
+
+var work_piles: Array[Work] = []
+var money_piles: Array[Money] = []
 
 @onready var anim_tree = $AnimationTree
 

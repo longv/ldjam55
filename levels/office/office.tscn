@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c4ydyqu55xvon"]
+[gd_scene load_steps=13 format=3 uid="uid://c4ydyqu55xvon"]
 
 [ext_resource type="Script" path="res://levels/office/office.gd" id="1_1ak5r"]
 [ext_resource type="PackedScene" uid="uid://c7u65acrpd0bp" path="res://characters/enemies/akabei/akabei.tscn" id="1_ikiby"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://cibxdy8qefhvg" path="res://assets/Modern_Office_Revamped/1_Room_Builder_Office/Room_Builder_Office_32x32.png" id="4_dkhgt"]
 [ext_resource type="PackedScene" uid="uid://c08f5hkg6wfgi" path="res://characters/player/kuchi_norm/kuchi_norm.tscn" id="4_icye5"]
 [ext_resource type="PackedScene" uid="uid://cc7kc33vr17bj" path="res://characters/enemies/pinky/pinky.tscn" id="6_a63tn"]
+[ext_resource type="PackedScene" uid="uid://cwyfuqrbdqeuq" path="res://objects/work/work.tscn" id="7_y1p0e"]
+[ext_resource type="PackedScene" uid="uid://c7m7xdc76ibng" path="res://objects/money/money.tscn" id="8_xseix"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_lmu7m"]
 vertices = PackedVector2Array(837, 310, 795, 310, 645, 309, 645, 246, 60, 607, 458, 501, 854, 458, 1066, 458, 1136, 607, 1136, 74, 1066, 406, 854, 406, 837, 341, 667, 437, 741, 437, 458, 438, 374, 501, 374, 438, 60, 67, 342, 362, 517, 202, 517, 150, 443, 150, 741, 374, 795, 341, 481, 310, 481, 378, 394, 362, 394, 310, 443, 202, 667, 374, 543, 378, 543, 310, 603, 309, 342, 310, 603, 246)
@@ -2505,3 +2507,9 @@ speed = 180.0
 [node name="KuchiNorm" parent="." instance=ExtResource("4_icye5")]
 unique_name_in_owner = true
 position = Vector2(584, 360)
+
+[node name="Work" parent="." instance=ExtResource("7_y1p0e")]
+position = Vector2(576, 464)
+
+[node name="Money" parent="." instance=ExtResource("8_xseix")]
+position = Vector2(704, 312)

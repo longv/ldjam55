@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwyfuqrbdqeuq"]
+
+[ext_resource type="Script" path="res://objects/work/work.gd" id="1_be55n"]
+[ext_resource type="Texture2D" uid="uid://eabodlnk3sgk" path="res://assets/Modern_Office_Revamped/4_Modern_Office_singles/32x32/Modern_Office_Singles_32x32_156.png" id="2_k27hk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mt1jq"]
+radius = 5.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nmv1q"]
+radius = 8.0
+
+[node name="Work" type="StaticBody2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_be55n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CircleShape2D_mt1jq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_k27hk")
+offset = Vector2(17.49, -27.03)
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("CircleShape2D_nmv1q")
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
