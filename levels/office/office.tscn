@@ -1,15 +1,19 @@
-[gd_scene load_steps=10 format=3 uid="uid://c4ydyqu55xvon"]
+[gd_scene load_steps=14 format=3 uid="uid://c4ydyqu55xvon"]
 
 [ext_resource type="Script" path="res://levels/office/office.gd" id="1_1ak5r"]
 [ext_resource type="PackedScene" uid="uid://c7u65acrpd0bp" path="res://characters/enemies/akabei/akabei.tscn" id="1_ikiby"]
 [ext_resource type="Texture2D" uid="uid://bt6q1tfj5udmn" path="res://assets/Modern_Office_Revamped/2_Modern_Office_Black_Shadow/Modern_Office_Black_Shadow_32x32.png" id="3_c2vcy"]
 [ext_resource type="Texture2D" uid="uid://cibxdy8qefhvg" path="res://assets/Modern_Office_Revamped/1_Room_Builder_Office/Room_Builder_Office_32x32.png" id="4_dkhgt"]
-[ext_resource type="PackedScene" uid="uid://c08f5hkg6wfgi" path="res://characters/player/kuchi/kuchi2.tscn" id="4_icye5"]
+[ext_resource type="PackedScene" uid="uid://c08f5hkg6wfgi" path="res://characters/player/kuchi_norm/kuchi_norm.tscn" id="4_icye5"]
+[ext_resource type="PackedScene" uid="uid://cc7kc33vr17bj" path="res://characters/enemies/pinky/pinky.tscn" id="6_a63tn"]
+[ext_resource type="PackedScene" uid="uid://cwyfuqrbdqeuq" path="res://objects/work/work.tscn" id="7_y1p0e"]
+[ext_resource type="PackedScene" uid="uid://c7m7xdc76ibng" path="res://objects/money/money.tscn" id="8_xseix"]
+[ext_resource type="PackedScene" uid="uid://byf6sm1wbnbt2" path="res://objects/home/home.tscn" id="9_dkya6"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_lmu7m"]
-vertices = PackedVector2Array(837, 310, 795, 310, 645, 309, 645, 246, 60, 607, 458, 501, 854, 458, 1066, 458, 1136, 607, 1136, 74, 1066, 406, 854, 406, 837, 341, 667, 437, 741, 437, 458, 438, 374, 501, 374, 438, 60, 67, 342, 362, 517, 202, 517, 150, 443, 150, 741, 374, 795, 341, 481, 310, 481, 378, 394, 362, 394, 310, 443, 202, 667, 374, 543, 378, 543, 310, 603, 309, 342, 310, 603, 246)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7, 8), PackedInt32Array(9, 10, 11, 12, 0), PackedInt32Array(13, 14, 6, 5, 15), PackedInt32Array(9, 8, 7, 10), PackedInt32Array(16, 5, 4), PackedInt32Array(17, 16, 4, 18, 19), PackedInt32Array(20, 21, 9, 0, 3), PackedInt32Array(18, 9, 21, 22), PackedInt32Array(12, 11, 6, 14, 23, 24), PackedInt32Array(25, 26, 15, 27, 28, 29), PackedInt32Array(30, 13, 31, 32, 33, 2), PackedInt32Array(31, 13, 15, 26), PackedInt32Array(27, 15, 17, 19), PackedInt32Array(34, 19, 18), PackedInt32Array(34, 18, 22, 29, 28), PackedInt32Array(32, 25, 29, 20, 35, 33), PackedInt32Array(20, 3, 35), PackedInt32Array(23, 30, 2, 1, 24)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(50, 57, 50, 617, 1146, 617, 1146, 65)])
+vertices = PackedVector2Array(837, 310, 795, 310, 645, 309, 645, 246, 59, 606, 458, 501, 854, 458, 1066, 458, 1101, 606, 1094, 82, 1066, 406, 854, 406, 837, 341, 667, 437, 741, 437, 458, 438, 374, 501, 374, 438, 58, 82, 342, 362, 517, 202, 517, 150, 443, 150, 741, 374, 795, 341, 481, 310, 481, 378, 394, 362, 394, 310, 443, 202, 667, 374, 543, 378, 543, 310, 603, 309, 342, 310, 603, 246)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7, 8), PackedInt32Array(9, 8, 7, 10), PackedInt32Array(9, 10, 11, 12, 0), PackedInt32Array(13, 14, 6, 5, 15), PackedInt32Array(16, 5, 4), PackedInt32Array(17, 16, 4, 18, 19), PackedInt32Array(20, 21, 9, 0, 3), PackedInt32Array(18, 9, 21, 22), PackedInt32Array(12, 11, 6, 14, 23, 24), PackedInt32Array(25, 26, 15, 27, 28, 29), PackedInt32Array(30, 13, 31, 32, 33, 2), PackedInt32Array(31, 13, 15, 26), PackedInt32Array(27, 15, 17, 19), PackedInt32Array(34, 19, 18), PackedInt32Array(34, 18, 22, 29, 28), PackedInt32Array(32, 25, 29, 20, 35, 33), PackedInt32Array(20, 3, 35), PackedInt32Array(23, 30, 2, 1, 24)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(48, 72, 50, 617, 1112, 616, 1104, 72)])
 source_geometry_group_name = &"navigation_polygon_source_group"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4d0ay"]
@@ -2474,6 +2478,7 @@ sources/1 = SubResource("TileSetAtlasSource_1yxls")
 [node name="Office" type="Node2D"]
 position = Vector2(2.08165e-12, 2.08165e-12)
 script = ExtResource("1_1ak5r")
+scatter_duration = 2000
 metadata/_edit_lock_ = true
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
@@ -2492,13 +2497,26 @@ layer_2/name = "Wall"
 layer_2/z_index = -1
 layer_2/tile_data = PackedInt32Array(1, 65536, 11, 2, 65536, 11, 3, 65536, 11, 4, 65536, 11, 5, 65536, 11, 6, 65536, 11, 7, 65536, 11, 8, 65536, 11, 9, 65536, 11, 10, 65536, 11, 11, 65536, 11, 12, 65536, 11, 13, 65536, 11, 14, 65536, 11, 15, 65536, 11, 16, 65536, 11, 17, 65536, 11, 18, 65536, 11, 19, 65536, 11, 20, 65536, 11, 21, 65536, 11, 22, 65536, 11, 23, 65536, 11, 24, 65536, 11, 25, 65536, 11, 26, 65536, 11, 27, 65536, 11, 28, 65536, 11, 29, 65536, 11, 30, 65536, 11, 31, 65536, 11, 32, 65536, 11, 33, 65536, 11, 34, 65536, 11, 1245184, 655360, 805306368, 1179648, 720896, 1, 1114112, 720896, 1, 1048576, 720896, 1, 983040, 720896, 1, 917504, 720896, 1, 851968, 720896, 1, 786432, 720896, 1, 720896, 720896, 1, 655360, 720896, 1, 589824, 720896, 1, 524288, 720896, 1, 458752, 720896, 1, 393216, 720896, 1, 327680, 720896, 1, 262144, 720896, 1, 196608, 720896, 1, 131072, 720896, 1, 65536, 720896, 1, 65571, 720896, 1, 131107, 720896, 1, 196643, 720896, 1, 262179, 720896, 1, 327715, 720896, 1, 393251, 720896, 1, 458787, 720896, 1, 524323, 720896, 1, 589859, 720896, 1, 655395, 720896, 1, 720931, 720896, 1, 786467, 720896, 1, 852003, 720896, 1, 917539, 720896, 1, 983075, 720896, 1, 1048611, 720896, 1, 1114147, 720896, 1, 1179683, 720896, 1, 1245219, 786432, 805306368, 1245185, 65536, 805306379, 1245186, 65536, 805306379, 1245187, 65536, 805306379, 1245188, 65536, 805306379, 1245189, 65536, 805306379, 1245190, 65536, 805306379, 1245191, 65536, 805306379, 1245192, 65536, 805306379, 1245193, 65536, 805306379, 1245194, 65536, 805306379, 1245195, 65536, 805306379, 1245196, 65536, 805306379, 1245197, 65536, 805306379, 1245198, 65536, 805306379, 1245199, 65536, 805306379, 1245200, 65536, 805306379, 1245201, 65536, 805306379, 1245202, 65536, 805306379, 1245203, 65536, 805306379, 1245204, 65536, 805306379, 1245205, 65536, 805306379, 1245206, 65536, 805306379, 1245207, 65536, 805306379, 1245208, 65536, 805306379, 1245209, 65536, 805306379, 1245210, 65536, 805306379, 1245211, 65536, 805306379, 1245212, 65536, 805306379, 1245213, 65536, 805306379, 1245214, 65536, 805306379, 1245215, 65536, 805306379, 1245216, 65536, 805306379, 1245217, 65536, 805306379, 1245218, 65536, 805306379, 35, 655360, 0, 0, 786432, 0, 1310720, 524288, 0, 1310721, 524288, 0, 1310722, 524288, 0, 1310723, 524288, 0, 1310724, 524288, 0, 1310725, 524288, 0, 1310726, 524288, 0, 1310727, 524288, 0, 1310728, 524288, 0, 1310729, 524288, 0, 1310730, 524288, 0, 1310731, 524288, 0, 1310732, 524288, 0, 1310733, 524288, 0, 1310734, 524288, 0, 1310735, 524288, 0, 1310736, 524288, 0, 1310737, 524288, 0, 1310738, 524288, 0, 1310739, 524288, 0, 1310740, 524288, 0, 1310741, 524288, 0, 1310742, 524288, 0, 1310743, 524288, 0, 1310744, 524288, 0, 1310745, 524288, 0, 1310746, 524288, 0, 1310747, 524288, 0, 1310748, 524288, 0, 1310749, 524288, 0, 1310750, 524288, 0, 1310751, 524288, 0, 1310752, 524288, 0, 1310753, 524288, 0, 1310754, 524288, 0, 1310755, 524288, 0, 65537, 524288, 12, 65538, 524288, 12, 65539, 524288, 12, 65540, 524288, 12, 65541, 524288, 12, 65542, 524288, 12, 65543, 524288, 12, 65544, 524288, 12, 65545, 524288, 12, 65546, 524288, 12, 65547, 524288, 12, 65548, 524288, 12, 65549, 524288, 12, 65550, 524288, 12, 65551, 524288, 12, 65552, 524288, 12, 65553, 524288, 12, 65554, 524288, 12, 65555, 524288, 12, 65556, 524288, 12, 65557, 524288, 12, 65558, 524288, 12, 65559, 524288, 12, 65560, 524288, 12, 65561, 524288, 12, 65562, 524288, 12, 65563, 524288, 12, 65564, 524288, 12, 65565, 524288, 12, 65566, 524288, 12, 65567, 524288, 12, 65568, 524288, 12, 65569, 524288, 12, 65570, 524288, 12)
 
-[node name="Akabei" parent="." node_paths=PackedStringArray("target") instance=ExtResource("1_ikiby")]
-position = Vector2(313, 454)
-collision_layer = 2
-collision_mask = 5
-target = NodePath("../Kuchi2")
+[node name="Akabei" parent="." instance=ExtResource("1_ikiby")]
+position = Vector2(192, 544)
 speed = 180.0
 
-[node name="Kuchi2" parent="." instance=ExtResource("4_icye5")]
-position = Vector2(542, 433)
-collision_mask = 6
+[node name="Pinky" parent="." instance=ExtResource("6_a63tn")]
+position = Vector2(104, 544)
+collision_mask = 5
+speed = 180.0
+
+[node name="KuchiNorm" parent="." instance=ExtResource("4_icye5")]
+unique_name_in_owner = true
+position = Vector2(584, 360)
+
+[node name="Home" parent="." instance=ExtResource("9_dkya6")]
+unique_name_in_owner = true
+position = Vector2(152, 560)
+scale = Vector2(6, 6)
+
+[node name="Work" parent="." instance=ExtResource("7_y1p0e")]
+position = Vector2(576, 464)
+
+[node name="Money" parent="." instance=ExtResource("8_xseix")]
+position = Vector2(704, 312)

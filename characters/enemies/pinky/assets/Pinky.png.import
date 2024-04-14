@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cggcf6e1033w5"
-path="res://.godot/imported/Amelia_run_16x16.png-40a44842a45bd2108c2ccd9f931d0fd4.ctex"
+uid="uid://ohkxbqn7v5ca"
+path="res://.godot/imported/Pinky.png-164dc7ee7d5853bb855b03a8dcbe646c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Modern tiles_Free/Characters_free/Amelia_run_16x16.png"
-dest_files=["res://.godot/imported/Amelia_run_16x16.png-40a44842a45bd2108c2ccd9f931d0fd4.ctex"]
+source_file="res://characters/enemies/pinky/assets/Pinky.png"
+dest_files=["res://.godot/imported/Pinky.png-164dc7ee7d5853bb855b03a8dcbe646c.ctex"]
 
 [params]
 

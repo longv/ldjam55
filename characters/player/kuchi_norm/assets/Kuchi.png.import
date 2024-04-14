@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d158n6rhsx1py"
-path="res://.godot/imported/Adam_idle_anim_16x16.png-8842de5553d434edbe9005e47b77f49b.ctex"
+uid="uid://kyqgxs0760ma"
+path="res://.godot/imported/Kuchi.png-9609bd4f2b15ae51f47904b7ac065757.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/enemies/akabei/assets/Adam_idle_anim_16x16.png"
-dest_files=["res://.godot/imported/Adam_idle_anim_16x16.png-8842de5553d434edbe9005e47b77f49b.ctex"]
+source_file="res://characters/player/kuchi_norm/assets/Kuchi.png"
+dest_files=["res://.godot/imported/Kuchi.png-9609bd4f2b15ae51f47904b7ac065757.ctex"]
 
 [params]
 
