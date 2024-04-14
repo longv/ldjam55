@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://qar1yl1slphg" path="res://assets/Modern tiles_Free/Characters_free/Adam_run_16x16.png" id="3_vscjh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0uoqx"]
-radius = 5.0
-height = 22.6667
+radius = 4.0
+height = 8.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_brwre"]
 atlas = ExtResource("2_1uy8i")
@@ -675,11 +675,13 @@ animation = &"idle_right"
 blend_point_0/node = SubResource("AnimationNodeAnimation_ecpos")
 blend_point_0/pos = Vector2(-1, 0)
 blend_point_1/node = SubResource("AnimationNodeAnimation_vkt8k")
-blend_point_1/pos = Vector2(0, 1)
+blend_point_1/pos = Vector2(2.08167e-14, 1.1)
 blend_point_2/node = SubResource("AnimationNodeAnimation_efm70")
-blend_point_2/pos = Vector2(0, -1)
+blend_point_2/pos = Vector2(2.08167e-14, -1.1)
 blend_point_3/node = SubResource("AnimationNodeAnimation_d5c2t")
 blend_point_3/pos = Vector2(1, 0)
+min_space = Vector2(-1, -1.1)
+max_space = Vector2(1, 1.1)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_upg4i"]
@@ -729,7 +731,7 @@ collision_mask = 6
 script = ExtResource("1_rcivx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 5.33333)
+position = Vector2(2.08165e-12, 10)
 shape = SubResource("CapsuleShape2D_0uoqx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

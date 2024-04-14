@@ -13,10 +13,12 @@ func _process(_delta):
 	_update_anim()
 
 func _physics_process(delta):
-	var direction = nav_agent.get_next_path_position() - global_position
-	direction = direction.normalized()
-
-	velocity = velocity.lerp(direction * speed, acceleration * delta)
+	if nav_agent.is_target_reached():
+		velocity = velocity.move_toward(Vector2.ZERO, speed)
+	else:
+		var direction = nav_agent.get_next_path_position() - global_position
+		direction = direction.normalized()
+		velocity = velocity.lerp(direction * speed, acceleration * delta)
 
 	move_and_slide()
 
@@ -30,4 +32,5 @@ func _update_anim():
 
 
 func _on_timer_timeout():
-	nav_agent.target_position = target.global_position
+	if target:
+		nav_agent.target_position = target.global_position

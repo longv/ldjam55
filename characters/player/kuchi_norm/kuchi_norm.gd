@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 
 @export var speed = 300.0
+@export var accelaration = 7.0
 
 @onready var anim_tree = $AnimationTree
 
@@ -10,17 +11,16 @@ func _process(delta):
 	_update_anim()
 
 func _physics_process(delta):
-	var h_direction = Input.get_axis("ui_left", "ui_right")
-	if h_direction && velocity.y == 0:
-		velocity.x = h_direction * speed
-	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
+	var direction = Vector2(
+		Input.get_axis("ui_left", "ui_right"),
+		Input.get_axis("ui_up", "ui_down")
+	)
 
-	var v_direction = Input.get_axis("ui_up", "ui_down")
-	if v_direction && velocity.x == 0:
-		velocity.y = v_direction * speed
+	if direction != Vector2.ZERO:
+		direction = direction.normalized()
+		velocity = velocity.lerp(direction * speed, accelaration * delta)
 	else:
-		velocity.y = move_toward(velocity.y, 0, speed)
+		velocity = velocity.move_toward(Vector2.ZERO, speed)
 
 	move_and_slide()
 
