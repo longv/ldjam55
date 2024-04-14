@@ -83,6 +83,7 @@ _data = {
 }
 
 [node name="Colleague" type="CharacterBody2D"]
+collision_mask = 5
 script = ExtResource("1_nppw0")
 
 [node name="Frames" type="AnimatedSprite2D" parent="."]

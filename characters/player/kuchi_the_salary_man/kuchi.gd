@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+class_name Kuchi
+
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
@@ -7,9 +9,9 @@ const JUMP_VELOCITY = -400.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var capacity: int = 10
 
-@onready var anim = get_node("AnimationPlayer")
+@onready var anim: AnimationPlayer = $AnimationPlayer
 @onready var task_scene = load("res://objects/task.tscn")
-@onready var task_appear: Node2D = get_node("TaskAppear")
+@onready var task_appear: Node2D = $TaskAppear
 
 func _ready():
 	anim.play("idle")
@@ -34,7 +36,7 @@ func _physics_process(delta):
 
 func send_task(tshirt_size: int):
 	print(position)
-	var task = task_scene.instantiate()
+	var task: TaskCombat = task_scene.instantiate()
 	task.position = task_appear.position
 	task.tshirt_size = tshirt_size
 	call_deferred("add_child", task)
