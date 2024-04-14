@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://levels/office/office.gd" id="1_1ak5r"]
 [ext_resource type="PackedScene" uid="uid://c7u65acrpd0bp" path="res://characters/enemies/akabei/akabei.tscn" id="1_ikiby"]
-[ext_resource type="Texture2D" uid="uid://bt6q1tfj5udmn" path="res://assets/Modern_Office_Revamped/2_Modern_Office_Black_Shadow/Modern_Office_Black_Shadow_32x32.png" id="3_c2vcy"]
-[ext_resource type="Texture2D" uid="uid://cibxdy8qefhvg" path="res://assets/Modern_Office_Revamped/1_Room_Builder_Office/Room_Builder_Office_32x32.png" id="4_dkhgt"]
+[ext_resource type="Texture2D" uid="uid://bt6q1tfj5udmn" path="res://Assets/Modern_Office_Revamped/2_Modern_Office_Black_Shadow/Modern_Office_Black_Shadow_32x32.png" id="3_c2vcy"]
+[ext_resource type="Texture2D" uid="uid://cibxdy8qefhvg" path="res://Assets/Modern_Office_Revamped/1_Room_Builder_Office/Room_Builder_Office_32x32.png" id="4_dkhgt"]
 [ext_resource type="PackedScene" uid="uid://c08f5hkg6wfgi" path="res://characters/player/kuchi_norm/kuchi_norm.tscn" id="4_icye5"]
 [ext_resource type="PackedScene" uid="uid://cc7kc33vr17bj" path="res://characters/enemies/pinky/pinky.tscn" id="6_a63tn"]
 [ext_resource type="PackedScene" uid="uid://cwyfuqrbdqeuq" path="res://objects/work/work.tscn" id="7_y1p0e"]

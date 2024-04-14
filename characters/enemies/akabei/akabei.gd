@@ -14,4 +14,6 @@ func _get_target_position():
 
 func _on_hitbox_body_entered(body: Node2D):
 	if body is KuchiNorm:
-		global_position = home.global_position
+		SceneSwitcher.annoyance = "akabei"
+		SceneSwitcher.goto_scene("res://levels/meeting.tscn")	
+		# global_position = home.global_position
