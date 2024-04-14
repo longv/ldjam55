@@ -764,6 +764,8 @@ parameters/Run/blend_position = Vector2(0, 0)
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="Navigation"]
 target_desired_distance = 20.0
 path_postprocessing = 1
+debug_enabled = true
+debug_path_custom_color = Color(1, 0, 0, 1)
 
 [node name="Timer" type="Timer" parent="Navigation"]
 wait_time = 0.1
