@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhmmj6f6ufaf"
-path="res://.godot/imported/Amelia_run_16x16.png-42539995904c68925ea22b9f4cf234fe.ctex"
+uid="uid://kyqgxs0760ma"
+path="res://.godot/imported/Kuchi.png-9609bd4f2b15ae51f47904b7ac065757.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/enemies/pinky/assets/Amelia_run_16x16.png"
-dest_files=["res://.godot/imported/Amelia_run_16x16.png-42539995904c68925ea22b9f4cf234fe.ctex"]
+source_file="res://characters/player/kuchi_norm/assets/Kuchi.png"
+dest_files=["res://.godot/imported/Kuchi.png-9609bd4f2b15ae51f47904b7ac065757.ctex"]
 
 [params]
 

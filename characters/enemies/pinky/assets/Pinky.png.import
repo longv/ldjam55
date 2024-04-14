@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://i5ajpkn33jvc"
-path="res://.godot/imported/Adam_idle_anim_16x16.png-9c4d2a4fb51fc33fe6d89ccb30ccca6e.ctex"
+uid="uid://ohkxbqn7v5ca"
+path="res://.godot/imported/Pinky.png-164dc7ee7d5853bb855b03a8dcbe646c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/player/kuchi_norm/assets/Adam_idle_anim_16x16.png"
-dest_files=["res://.godot/imported/Adam_idle_anim_16x16.png-9c4d2a4fb51fc33fe6d89ccb30ccca6e.ctex"]
+source_file="res://characters/enemies/pinky/assets/Pinky.png"
+dest_files=["res://.godot/imported/Pinky.png-164dc7ee7d5853bb855b03a8dcbe646c.ctex"]
 
 [params]
 

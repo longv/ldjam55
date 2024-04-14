@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ci7i2d1jtrpu6"
-path="res://.godot/imported/Adam_run_16x16.png-b88d3145b903b957df5301f6c6a146ba.ctex"
+uid="uid://guvhrn1mtcpu"
+path="res://.godot/imported/Akabei.png-84914c7e54c59aae278b565f60a9975d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/player/kuchi_norm/assets/Adam_run_16x16.png"
-dest_files=["res://.godot/imported/Adam_run_16x16.png-b88d3145b903b957df5301f6c6a146ba.ctex"]
+source_file="res://characters/enemies/akabei/assets/Akabei.png"
+dest_files=["res://.godot/imported/Akabei.png-84914c7e54c59aae278b565f60a9975d.ctex"]
 
 [params]
 
