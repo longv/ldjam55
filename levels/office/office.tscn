@@ -2477,6 +2477,7 @@ sources/1 = SubResource("TileSetAtlasSource_1yxls")
 [node name="Office" type="Node2D"]
 position = Vector2(2.08165e-12, 2.08165e-12)
 script = ExtResource("1_1ak5r")
+scatter_duration = 2000
 metadata/_edit_lock_ = true
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
