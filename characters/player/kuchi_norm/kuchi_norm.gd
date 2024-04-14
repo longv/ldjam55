@@ -11,7 +11,7 @@ var money_piles: Array[Money] = []
 @onready var anim_tree = $AnimationTree
 
 
-func _process(delta):
+func _process(_delta):
 	_update_anim()
 
 func _physics_process(delta):

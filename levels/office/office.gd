@@ -10,7 +10,7 @@ var normal_time_start: int = -1
 @onready var enemies: Array[Enemy] = [$Akabei, $Pinky]
 
 
-func _process(delta):
+func _process(_delta):
 	if scatter_time_start == -1:
 		var normal_time_elapsed = Time.get_ticks_msec() - normal_time_start
 		if normal_time_elapsed > scatter_interval:
