@@ -1,7 +1,5 @@
 extends CharacterBody2D
 
-enum STATE {IDLE}
-
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
@@ -9,7 +7,6 @@ const JUMP_VELOCITY = -400.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @onready var anim = get_node("AnimationPlayer")
-@onready var state = STATE.IDLE
 @onready var task_scene = load("res://objects/task.tscn")
 @onready var task_appear: Node2D = get_node("TaskAppear")
 

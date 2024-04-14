@@ -27,7 +27,7 @@ func _physics_process(_delta):
 func _on_hitbox_body_entered(body: Node2D):
 	if body.name == "Colleague":
 		# TODO: Change this
-		SceneSwitcher.goto_previous()
+		# SceneSwitcher.goto_previous()
 		queue_free()
 	# var parent = area.get_parent()
 	# if !is_dead && area.name == "Hitbox" && parent.name == "Player":

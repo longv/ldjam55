@@ -169,7 +169,6 @@ _data = {
 [node name="Frames" parent="." index="0"]
 modulate = Color(0.117647, 1, 1, 1)
 sprite_frames = SubResource("SpriteFrames_qyom6")
-animation = &"run"
 
 [node name="AnimationPlayer" parent="." index="2"]
 libraries = {
