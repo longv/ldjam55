@@ -31,22 +31,25 @@ navigation_polygon = SubResource("NavigationPolygon_lmu7m")
 
 [node name="Akabei" parent="." instance=ExtResource("1_ikiby")]
 position = Vector2(272, 600)
+work_piles_taken_threshold = 10
 speed = 180.0
 
 [node name="Pinky" parent="." instance=ExtResource("6_a63tn")]
 position = Vector2(56, 552)
 collision_mask = 5
+work_piles_taken_threshold = 6
 speed = 120.0
+acceleration = 8
 
 [node name="Aosuke" parent="." instance=ExtResource("5_qwsvv")]
 position = Vector2(208, 552)
 speed = 150.0
-acceleration = 8
+acceleration = 5
 
 [node name="Guzuta" parent="." instance=ExtResource("6_de5iv")]
 position = Vector2(144, 584)
-speed = 160.0
-acceleration = 6
+speed = 150.0
+acceleration = 4
 
 [node name="KuchiNorm" parent="." instance=ExtResource("4_icye5")]
 unique_name_in_owner = true
@@ -64,8 +67,159 @@ unique_name_in_owner = true
 position = Vector2(1024, 392)
 scale = Vector2(5, 5)
 
-[node name="Work" parent="." instance=ExtResource("7_y1p0e")]
-position = Vector2(360, 280)
+[node name="WorkPiles" type="Node2D" parent="."]
 
-[node name="Money" parent="." instance=ExtResource("8_xseix")]
-position = Vector2(704, 312)
+[node name="Work" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(80, 424)
+
+[node name="Work8" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(512, 608)
+
+[node name="Work9" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(648, 608)
+
+[node name="Work14" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(560, 560)
+
+[node name="Work15" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(592, 224)
+
+[node name="Work16" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(696, 520)
+
+[node name="Work17" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(680, 432)
+
+[node name="Work10" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(784, 504)
+
+[node name="Work11" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(784, 440)
+
+[node name="Work12" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(432, 520)
+
+[node name="Work13" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(688, 176)
+
+[node name="Work38" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(728, 232)
+
+[node name="Work18" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(488, 432)
+
+[node name="Work19" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(64, 216)
+
+[node name="Work20" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(488, 128)
+
+[node name="Work21" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(592, 128)
+
+[node name="Work22" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(816, 128)
+
+[node name="Work23" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(880, 80)
+
+[node name="Work24" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(880, 176)
+
+[node name="Work25" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(976, 144)
+
+[node name="Work26" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(976, 256)
+
+[node name="Work27" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(1064, 256)
+
+[node name="Work28" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(880, 544)
+
+[node name="Work29" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(984, 584)
+
+[node name="Work30" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(1080, 552)
+
+[node name="Work31" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(880, 464)
+
+[node name="Work33" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(880, 344)
+
+[node name="Work34" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(880, 256)
+
+[node name="Work35" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(808, 280)
+
+[node name="Work36" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(608, 368)
+
+[node name="Work37" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(496, 224)
+
+[node name="Work39" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(400, 224)
+
+[node name="Work40" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(304, 192)
+
+[node name="Work41" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(192, 192)
+
+[node name="Work42" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(216, 288)
+
+[node name="Work43" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(480, 328)
+
+[node name="Work44" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(288, 328)
+
+[node name="Work47" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(384, 288)
+
+[node name="Work48" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(736, 328)
+
+[node name="Work45" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(272, 384)
+
+[node name="Work46" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(208, 424)
+
+[node name="Work2" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(352, 496)
+
+[node name="Work3" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(352, 592)
+
+[node name="Work4" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(248, 104)
+
+[node name="Work5" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(712, 88)
+
+[node name="Work6" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(424, 104)
+
+[node name="Work7" parent="WorkPiles" instance=ExtResource("7_y1p0e")]
+position = Vector2(88, 136)
+
+[node name="MoneyPiles" type="Node2D" parent="."]
+
+[node name="Money" parent="MoneyPiles" instance=ExtResource("8_xseix")]
+position = Vector2(240, 536)
+
+[node name="Money2" parent="MoneyPiles" instance=ExtResource("8_xseix")]
+position = Vector2(1088, 112)
+
+[node name="Money3" parent="MoneyPiles" instance=ExtResource("8_xseix")]
+position = Vector2(768, 600)
+
+[node name="Money4" parent="MoneyPiles" instance=ExtResource("8_xseix")]
+position = Vector2(344, 104)

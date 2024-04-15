@@ -1,6 +1,15 @@
 extends Enemy
 
 
+@export var start_delay = 5000
+
+@onready var time_start = Time.get_ticks_msec()
+
+
+func _should_begin():
+	return true if Time.get_ticks_msec() - time_start > start_delay \
+		else false
+		
 func _get_target_position():
 	match current_mode:
 		Mode.CHASE:

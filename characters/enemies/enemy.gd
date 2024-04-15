@@ -13,7 +13,7 @@ enum Mode {
 
 var current_mode = Mode.CHASE
 
-@onready var target = %KuchiNorm
+@onready var target: KuchiNorm = %KuchiNorm
 @onready var home = %EnemyHome
 @onready var anim_tree = $AnimationTree
 @onready var nav_agent = $Navigation/NavigationAgent2D
@@ -47,11 +47,14 @@ func change_mode_to(mode: Mode) -> bool:
 		current_mode = mode
 		return true
 
+func _should_begin() -> bool:
+	return true
+
 func _get_target_position():
 	pass
 
 func _on_timer_timeout():
 	if target:
 		var target_position = _get_target_position()
-		if target_position:
+		if target_position and _should_begin():
 			nav_agent.target_position = target_position

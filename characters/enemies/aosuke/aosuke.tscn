@@ -386,6 +386,7 @@ animations = [{
 
 [node name="Aosuke" instance=ExtResource("1_a8vdc")]
 script = ExtResource("2_hucm4")
+start_delay = 5000
 
 [node name="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_8avay")

@@ -1,6 +1,13 @@
 extends Enemy
 
 
+@export var work_piles_taken_threshold = 5
+
+
+func _should_begin():
+	return true if target.work_piles.size() >= work_piles_taken_threshold \
+		else false
+
 func _get_target_position():
 	match current_mode:
 		Mode.CHASE:

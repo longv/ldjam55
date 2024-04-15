@@ -8,6 +8,7 @@
 script = ExtResource("2_53qt6")
 
 [node name="Sprite2D" parent="." index="1"]
+scale = Vector2(1, 1)
 texture = ExtResource("2_jatbo")
 offset = Vector2(14.86, -20)
 
