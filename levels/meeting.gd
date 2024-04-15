@@ -19,6 +19,7 @@ var key_map = {}
 @onready var is_done: bool = true
 @onready var kuchi: Kuchi = $Kuchi
 @onready var task_hud: CanvasLayer = $TaskHud
+@onready var npc: RichTextLabel = $Right/NPC
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -49,6 +50,7 @@ func _ready():
 	enemy.position = Vector2(1062, 0)
 	enemy.scale = Vector2(5, 5)
 	call_deferred("add_child", enemy)
+	npc.text = "[center]%s[/center]" % SceneSwitcher.annoyance.capitalize()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
