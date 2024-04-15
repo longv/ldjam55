@@ -55,6 +55,11 @@ func _on_hitbox_body_entered(body: Node2D):
 	body.capacity -= tshirt_size
 	if body.name == "Colleague" || body.name == "Kuchi":
 		queue_free()
+	if body.name == "Kuchi":
+		$"../../Left/Capacity/Score".text = "[center]%d[/center]" % body.capacity
+	else:
+		$"../../Right/Capacity/Score".text = "[center]%d[/center]" % body.capacity
+		
 
 
 func _on_hitbox_area_entered(area: Area2D):
