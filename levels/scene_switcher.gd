@@ -42,6 +42,7 @@ func goto_previous(characters: Array[String]):
 func _deferred_goto_previous(characters: Array[String]):
 	# Free meeting
 	current_scene.free()
+	print(characters)
 	for character in characters:
 		var loser = previous_scene.get_node(character)
 		loser.global_position = loser.home.global_position

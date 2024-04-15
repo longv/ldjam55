@@ -12,6 +12,7 @@ enum Mode {
 @export var acceleration = 7
 
 var current_mode = Mode.CHASE
+var random_number_gen = RandomNumberGenerator.new()
 
 @onready var target: KuchiNorm = %KuchiNorm
 @onready var home = %EnemyHome

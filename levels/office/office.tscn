@@ -225,3 +225,8 @@ position = Vector2(768, 600)
 
 [node name="Money4" parent="MoneyPiles" instance=ExtResource("8_xseix")]
 position = Vector2(344, 104)
+
+[connection signal="taken" from="MoneyPiles/Money" to="." method="_on_money_taken"]
+[connection signal="taken" from="MoneyPiles/Money2" to="." method="_on_money_2_taken"]
+[connection signal="taken" from="MoneyPiles/Money3" to="." method="_on_money_3_taken"]
+[connection signal="taken" from="MoneyPiles/Money4" to="." method="_on_money_4_taken"]
