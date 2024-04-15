@@ -389,3 +389,6 @@ script = ExtResource("2_v4wie")
 
 [node name="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_hfxvo")
+
+[node name="AnimationTree" parent="." index="3"]
+parameters/Idle/blend_position = Vector2(0.0274247, -0.0144358)

@@ -1,16 +1,43 @@
-[gd_scene load_steps=7 format=3 uid="uid://gkx7yowcl28b"]
+[gd_scene load_steps=15 format=3 uid="uid://gkx7yowcl28b"]
 
 [ext_resource type="Script" path="res://levels/main.gd" id="1_3ui4e"]
 [ext_resource type="PackedScene" uid="uid://dl88or6dnb2eo" path="res://ui/background/background.tscn" id="2_3cymo"]
-[ext_resource type="Texture2D" uid="uid://dekqdc70d3wm3" path="res://Assets/play.png" id="3_u4k03"]
-[ext_resource type="Texture2D" uid="uid://k2tv05oohpkc" path="res://Assets/play_hover.png" id="4_2xamp"]
+[ext_resource type="PackedScene" uid="uid://dl8r8lcdwbydj" path="res://levels/meeting_tilemap.tscn" id="2_pky4g"]
+[ext_resource type="Texture2D" uid="uid://bet8ldqtmnrcb" path="res://ui/hud/assets/Modern_Office_Singles_48x48_170.png" id="3_n4iq7"]
+[ext_resource type="Texture2D" uid="uid://vb61o4rpdv2s" path="res://ui/hud/assets/letters/letter_P.png" id="4_rql7m"]
 [ext_resource type="AudioStream" uid="uid://d0irtxsc45atn" path="res://Assets/sunny-land/assets/sound/platformer_level03_loop.ogg" id="5_ppqj7"]
+[ext_resource type="Texture2D" uid="uid://3ih1tkc1ve1n" path="res://ui/hud/assets/letters/letter_L.png" id="5_vw4cf"]
+[ext_resource type="Texture2D" uid="uid://66uk6qxk4jel" path="res://ui/hud/assets/letters/letter_A.png" id="6_hciuj"]
 [ext_resource type="Texture2D" uid="uid://4wjw6a478eb8" path="res://Assets/credits.png" id="6_oe4yf"]
+[ext_resource type="PackedScene" uid="uid://b3dhj0gdrg3qd" path="res://characters/enemies/guzuta/guzuta.tscn" id="6_uqhty"]
+[ext_resource type="PackedScene" uid="uid://cc7kc33vr17bj" path="res://characters/enemies/pinky/pinky.tscn" id="7_00wu8"]
+[ext_resource type="Texture2D" uid="uid://cehyd8n37j7jy" path="res://ui/hud/assets/letters/letter_Y.png" id="7_ojkvw"]
+[ext_resource type="PackedScene" uid="uid://crjfm03u0ckx1" path="res://characters/enemies/aosuke/aosuke.tscn" id="8_l2ts0"]
+[ext_resource type="PackedScene" uid="uid://c7u65acrpd0bp" path="res://characters/enemies/akabei/akabei.tscn" id="13_lptbj"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_3ui4e")
 
+[node name="TileMap" parent="." instance=ExtResource("2_pky4g")]
+
+[node name="Akabei" parent="TileMap" instance=ExtResource("13_lptbj")]
+position = Vector2(167, 216)
+scale = Vector2(3, 3)
+
+[node name="Guzuta" parent="TileMap" instance=ExtResource("6_uqhty")]
+position = Vector2(792, 363)
+scale = Vector2(3, 3)
+
+[node name="Pinky" parent="TileMap" instance=ExtResource("7_00wu8")]
+position = Vector2(356, 556)
+scale = Vector2(3, 3)
+
+[node name="Aosuke" parent="TileMap" instance=ExtResource("8_l2ts0")]
+position = Vector2(791, 180)
+scale = Vector2(3, 3)
+
 [node name="Background" parent="." instance=ExtResource("2_3cymo")]
+visible = false
 
 [node name="Play" type="TextureButton" parent="."]
 anchors_preset = 8
@@ -18,25 +45,48 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 576.0
-offset_top = 300.0
-offset_right = 627.0
-offset_bottom = 332.0
+offset_left = 529.0
+offset_top = 220.0
+offset_right = 625.0
+offset_bottom = 364.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(4, 4)
-pivot_offset = Vector2(34, 22)
-texture_normal = ExtResource("3_u4k03")
-texture_hover = ExtResource("4_2xamp")
+scale = Vector2(3, 3)
+pivot_offset = Vector2(48, 120)
+texture_normal = ExtResource("3_n4iq7")
+texture_hover = ExtResource("3_n4iq7")
 stretch_mode = 3
+
+[node name="P" type="Sprite2D" parent="Play"]
+position = Vector2(25.0133, 101.013)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("4_rql7m")
+
+[node name="L" type="Sprite2D" parent="Play"]
+position = Vector2(40.3467, 101.014)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("5_vw4cf")
+
+[node name="A" type="Sprite2D" parent="Play"]
+position = Vector2(55.68, 101.014)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("6_hciuj")
+
+[node name="Y" type="Sprite2D" parent="Play"]
+position = Vector2(71.0134, 101.014)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("7_ojkvw")
 
 [node name="BGM" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_ppqj7")
 autoplay = true
 
 [node name="Credits" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(576, 564)
 scale = Vector2(3, 3)
 texture = ExtResource("6_oe4yf")
 
+[connection signal="mouse_entered" from="Play" to="." method="_on_play_mouse_entered"]
+[connection signal="mouse_exited" from="Play" to="." method="_on_play_mouse_exited"]
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]

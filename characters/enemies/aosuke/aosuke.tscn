@@ -390,3 +390,6 @@ start_delay = 5000
 
 [node name="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_8avay")
+
+[node name="AnimationTree" parent="." index="3"]
+parameters/Idle/blend_position = Vector2(-0.000668883, -0.129921)
