@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://cwyfuqrbdqeuq"]
 
 [ext_resource type="Script" path="res://objects/work/work.gd" id="1_be55n"]
-[ext_resource type="Texture2D" uid="uid://eabodlnk3sgk" path="res://assets/Modern_Office_Revamped/4_Modern_Office_singles/32x32/Modern_Office_Singles_32x32_156.png" id="2_k27hk"]
+[ext_resource type="Texture2D" uid="uid://eabodlnk3sgk" path="res://Assets/Modern_Office_Revamped/4_Modern_Office_singles/32x32/Modern_Office_Singles_32x32_156.png" id="2_k27hk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mt1jq"]
 radius = 5.0
@@ -41,6 +41,7 @@ shape = SubResource("CircleShape2D_mt1jq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
+position = Vector2(4.14142e-13, -1.98949)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("2_k27hk")
 offset = Vector2(17.49, -27.03)
