@@ -1,10 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://c4ydyqu55xvon"]
+[gd_scene load_steps=12 format=3 uid="uid://c4ydyqu55xvon"]
 
 [ext_resource type="Script" path="res://levels/office/office.gd" id="1_1ak5r"]
 [ext_resource type="PackedScene" uid="uid://c7u65acrpd0bp" path="res://characters/enemies/akabei/akabei.tscn" id="1_ikiby"]
 [ext_resource type="PackedScene" uid="uid://dve7pxuwon6ec" path="res://levels/tile_map.tscn" id="2_5pvha"]
 [ext_resource type="PackedScene" uid="uid://c08f5hkg6wfgi" path="res://characters/player/kuchi_norm/kuchi_norm.tscn" id="4_icye5"]
+[ext_resource type="PackedScene" uid="uid://crjfm03u0ckx1" path="res://characters/enemies/aosuke/aosuke.tscn" id="5_qwsvv"]
 [ext_resource type="PackedScene" uid="uid://cc7kc33vr17bj" path="res://characters/enemies/pinky/pinky.tscn" id="6_a63tn"]
+[ext_resource type="PackedScene" uid="uid://b3dhj0gdrg3qd" path="res://characters/enemies/guzuta/guzuta.tscn" id="6_de5iv"]
 [ext_resource type="PackedScene" uid="uid://cwyfuqrbdqeuq" path="res://objects/work/work.tscn" id="7_y1p0e"]
 [ext_resource type="PackedScene" uid="uid://c7m7xdc76ibng" path="res://objects/money/money.tscn" id="8_xseix"]
 [ext_resource type="PackedScene" uid="uid://byf6sm1wbnbt2" path="res://objects/home/home.tscn" id="9_dkya6"]
@@ -28,13 +30,23 @@ navigation_polygon = SubResource("NavigationPolygon_lmu7m")
 [node name="TileMap" parent="NavigationRegion2D" instance=ExtResource("2_5pvha")]
 
 [node name="Akabei" parent="." instance=ExtResource("1_ikiby")]
-position = Vector2(192, 544)
+position = Vector2(272, 600)
 speed = 180.0
 
 [node name="Pinky" parent="." instance=ExtResource("6_a63tn")]
-position = Vector2(104, 544)
+position = Vector2(56, 552)
 collision_mask = 5
-speed = 180.0
+speed = 120.0
+
+[node name="Aosuke" parent="." instance=ExtResource("5_qwsvv")]
+position = Vector2(208, 552)
+speed = 150.0
+acceleration = 8
+
+[node name="Guzuta" parent="." instance=ExtResource("6_de5iv")]
+position = Vector2(144, 584)
+speed = 160.0
+acceleration = 6
 
 [node name="KuchiNorm" parent="." instance=ExtResource("4_icye5")]
 unique_name_in_owner = true
@@ -42,6 +54,8 @@ position = Vector2(1024, 384)
 
 [node name="EnemyHome" parent="." instance=ExtResource("9_dkya6")]
 unique_name_in_owner = true
+visible = false
+z_index = -1
 position = Vector2(160, 560)
 scale = Vector2(6, 6)
 
