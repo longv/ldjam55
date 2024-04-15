@@ -11,6 +11,7 @@ var counter:int = 0
 var atk_speed: int = 100
 var tshirt_size: int = 9
 var capacity: int = 10
+var nickname: String = "Colleague"
 
 @onready var anim = $AnimationPlayer
 @onready var task_scene = load("res://objects/task.tscn")
@@ -34,7 +35,7 @@ func _physics_process(delta):
 
 func _process(_delta):
 	if capacity <= 0:
-		SceneSwitcher.goto_previous()
+		SceneSwitcher.goto_previous(nickname)
 	counter += 1
 	if int(counter) % atk_speed == 0:
 		counter = 0
