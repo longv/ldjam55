@@ -31,13 +31,13 @@ navigation_polygon = SubResource("NavigationPolygon_lmu7m")
 
 [node name="Akabei" parent="." instance=ExtResource("1_ikiby")]
 position = Vector2(272, 600)
-work_piles_taken_threshold = 10
+work_piles_taken_threshold = 15
 speed = 180.0
 
 [node name="Pinky" parent="." instance=ExtResource("6_a63tn")]
 position = Vector2(56, 552)
 collision_mask = 5
-work_piles_taken_threshold = 6
+work_piles_taken_threshold = 8
 speed = 120.0
 acceleration = 8
 
@@ -54,6 +54,8 @@ acceleration = 4
 [node name="KuchiNorm" parent="." instance=ExtResource("4_icye5")]
 unique_name_in_owner = true
 position = Vector2(1024, 384)
+speed = 200.0
+accelaration = 6.0
 
 [node name="EnemyHome" parent="." instance=ExtResource("9_dkya6")]
 unique_name_in_owner = true

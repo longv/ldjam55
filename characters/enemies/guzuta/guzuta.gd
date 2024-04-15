@@ -6,7 +6,8 @@ func _get_target_position():
 		Mode.CHASE:
 			return target.global_position
 		Mode.SCATTER:
-			return Vector2(64, 64)
+			var dest = Vector2(0, get_viewport_rect().size.y)
+			return dest
 		Mode.FRIGHTENED:
 			return null
 		_:

@@ -10,8 +10,8 @@ func _should_begin():
 
 func _get_target_position():
 	match current_mode:
-		Mode.CHASE:
-			var next_tile_position = target.velocity.normalized() * 180 # Two tiles ahead of target.
+		Mode.CHASE: # Go ahead of Kuchi two tiles.
+			var next_tile_position = target.velocity.normalized() * 180
 			return target.global_position + next_tile_position
 		Mode.SCATTER:
 			var dest = Vector2(get_viewport_rect().size.x, 0)
