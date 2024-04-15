@@ -63,7 +63,7 @@ func _process(delta):
 	
 
 func _unhandled_input(event):
-	if event is InputEventKey and event.is_pressed():
+	if not is_done and event is InputEventKey and event.is_pressed():
 		if event.keycode == KEY_SPACE:
 			_print_keys_name(work)
 			if _is_work_correct(true):
