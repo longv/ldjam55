@@ -18,7 +18,7 @@ func _ready():
 
 func _physics_process(delta):
 	if capacity <= 0:
-		SceneSwitcher.goto_previous("KuchiNorm")
+		SceneSwitcher.goto_previous(["KuchiNorm", "Akabei", "Pinky"])
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta

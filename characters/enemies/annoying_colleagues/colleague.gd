@@ -35,7 +35,7 @@ func _physics_process(delta):
 
 func _process(_delta):
 	if capacity <= 0:
-		SceneSwitcher.goto_previous(nickname)
+		SceneSwitcher.goto_previous(["Akabei", "Pinky"])
 	counter += 1
 	if int(counter) % atk_speed == 0:
 		counter = 0

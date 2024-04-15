@@ -16,4 +16,3 @@ func _on_hitbox_body_entered(body: Node2D):
 	if body is KuchiNorm:
 		SceneSwitcher.annoyance = "pinky"
 		SceneSwitcher.goto_scene("res://levels/meeting.tscn")	
-		# global_position = home.global_position

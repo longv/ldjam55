@@ -9,6 +9,7 @@ var work_piles: Array[Work] = []
 var money_piles: Array[Money] = []
 
 @onready var anim_tree = $AnimationTree
+@onready var home = %KuchiHome
 
 
 func _process(_delta):

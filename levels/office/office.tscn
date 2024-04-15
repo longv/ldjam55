@@ -38,12 +38,17 @@ speed = 180.0
 
 [node name="KuchiNorm" parent="." instance=ExtResource("4_icye5")]
 unique_name_in_owner = true
-position = Vector2(584, 360)
+position = Vector2(1024, 384)
 
-[node name="Home" parent="." instance=ExtResource("9_dkya6")]
+[node name="EnemyHome" parent="." instance=ExtResource("9_dkya6")]
 unique_name_in_owner = true
 position = Vector2(160, 560)
 scale = Vector2(6, 6)
+
+[node name="KuchiHome" parent="." instance=ExtResource("9_dkya6")]
+unique_name_in_owner = true
+position = Vector2(1024, 392)
+scale = Vector2(5, 5)
 
 [node name="Work" parent="." instance=ExtResource("7_y1p0e")]
 position = Vector2(360, 280)

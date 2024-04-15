@@ -14,7 +14,7 @@ enum Mode {
 var current_mode = Mode.CHASE
 
 @onready var target = %KuchiNorm
-@onready var home = %Home
+@onready var home = %EnemyHome
 @onready var anim_tree = $AnimationTree
 @onready var nav_agent = $Navigation/NavigationAgent2D
 
