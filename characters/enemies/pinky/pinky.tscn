@@ -386,6 +386,7 @@ animations = [{
 
 [node name="Pinky" instance=ExtResource("1_fm26e")]
 script = ExtResource("2_p4y8h")
+work_piles_taken_threshold = 3
 
 [node name="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_qs5e8")

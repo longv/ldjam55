@@ -2,6 +2,7 @@ extends ColleagueCombat
 
  
 func _ready():
+	nickname = "Guzuta"
 	atk_speed = 650
 	tshirt_size = _dmg()
 

@@ -12,14 +12,17 @@ enum Mode {
 @export var acceleration = 7
 
 var current_mode = Mode.CHASE
+var random_number_gen = RandomNumberGenerator.new()
 
-@onready var target = %KuchiNorm
-@onready var home = %Home
+@onready var target: KuchiNorm = %KuchiNorm
+@onready var home = %EnemyHome
 @onready var anim_tree = $AnimationTree
 @onready var nav_agent = $Navigation/NavigationAgent2D
 
 
 func _process(_delta):
+	modulate = Color.hex(0xff0000ff) if current_mode == Mode.FRIGHTENED \
+		else Color.WHITE
 	_update_anim()
 
 func _physics_process(delta):
@@ -47,11 +50,14 @@ func change_mode_to(mode: Mode) -> bool:
 		current_mode = mode
 		return true
 
+func _should_begin() -> bool:
+	return true
+
 func _get_target_position():
 	pass
 
 func _on_timer_timeout():
 	if target:
 		var target_position = _get_target_position()
-		if target_position:
+		if target_position and _should_begin():
 			nav_agent.target_position = target_position

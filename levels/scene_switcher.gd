@@ -35,15 +35,17 @@ func _deferred_goto_scene(path):
 	get_tree().current_scene = current_scene
 
 
-func goto_previous(send_home: String):
-	call_deferred("_deferred_goto_previous", send_home)
+func goto_previous(characters: Array[String]):
+	call_deferred("_deferred_goto_previous", characters)
 
 
-func _deferred_goto_previous(send_home: String):
+func _deferred_goto_previous(characters: Array[String]):
 	# Free meeting
 	current_scene.free()
-	var loser = previous_scene.get_node(send_home)
-	loser.global_position = loser.home.global_position
+	print(characters)
+	for character in characters:
+		var loser = previous_scene.get_node(character)
+		loser.global_position = loser.home.global_position
 	# Add back the previous scene to root
 	get_tree().root.add_child(previous_scene)
 	# Set tree current scene to the previous scene
