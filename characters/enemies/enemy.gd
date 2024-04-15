@@ -21,6 +21,8 @@ var random_number_gen = RandomNumberGenerator.new()
 
 
 func _process(_delta):
+	modulate = Color.hex(0xff0000ff) if current_mode == Mode.FRIGHTENED \
+		else Color.WHITE
 	_update_anim()
 
 func _physics_process(delta):
