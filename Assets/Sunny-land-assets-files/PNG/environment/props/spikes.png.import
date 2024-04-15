@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bssqufl8md2j1"
-path="res://.godot/imported/spikes.png-f37c8f2e9d9afe7995cd0996740173a5.ctex"
+path="res://.godot/imported/spikes.png-fe906676f8d0c961cf7d747f0145adc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sunny-land-assets-files/PNG/environment/props/spikes.png"
-dest_files=["res://.godot/imported/spikes.png-f37c8f2e9d9afe7995cd0996740173a5.ctex"]
+source_file="res://assets/Sunny-land-assets-files/PNG/environment/props/spikes.png"
+dest_files=["res://.godot/imported/spikes.png-fe906676f8d0c961cf7d747f0145adc3.ctex"]
 
 [params]
 

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cwyfuqrbdqeuq" path="res://objects/work/work.tscn" id="1_r77cb"]
 [ext_resource type="Script" path="res://objects/money/money.gd" id="2_53qt6"]
-[ext_resource type="Texture2D" uid="uid://ccs3a6m13lx0" path="res://Assets/Modern_Office_Revamped/4_Modern_Office_singles/32x32/Modern_Office_Singles_32x32_338.png" id="2_jatbo"]
+[ext_resource type="Texture2D" uid="uid://ccs3a6m13lx0" path="res://assets/Modern_Office_Revamped/4_Modern_Office_singles/32x32/Modern_Office_Singles_32x32_338.png" id="2_jatbo"]
 
 [node name="Money" instance=ExtResource("1_r77cb")]
 script = ExtResource("2_53qt6")

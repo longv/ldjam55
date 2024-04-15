@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cht4x73s3iplk"
-path="res://.godot/imported/player-run-3.png-8b0145f7a29ae63f666d2eeadd1ec318.ctex"
+path="res://.godot/imported/player-run-3.png-82fcda63e282472e76e861192d28f9aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sunny-land-assets-files/PNG/sprites/player/run/player-run-3.png"
-dest_files=["res://.godot/imported/player-run-3.png-8b0145f7a29ae63f666d2eeadd1ec318.ctex"]
+source_file="res://assets/Sunny-land-assets-files/PNG/sprites/player/run/player-run-3.png"
+dest_files=["res://.godot/imported/player-run-3.png-82fcda63e282472e76e861192d28f9aa.ctex"]
 
 [params]
 

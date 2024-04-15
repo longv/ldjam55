@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cww6whhb33i0e"
-path="res://.godot/imported/keyboard_numpad_plus.png-77276b18739093bf5774489e2ddc7746.ctex"
+path="res://.godot/imported/keyboard_numpad_plus.png-b2c44f50137a3c4afb87cb5a7454061e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_numpad_plus.png"
-dest_files=["res://.godot/imported/keyboard_numpad_plus.png-77276b18739093bf5774489e2ddc7746.ctex"]
+source_file="res://assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_numpad_plus.png"
+dest_files=["res://.godot/imported/keyboard_numpad_plus.png-b2c44f50137a3c4afb87cb5a7454061e.ctex"]
 
 [params]
 

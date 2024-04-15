@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://47swnahn55ul"
-path="res://.godot/imported/middle.png-c96597db32e866be1b3d3d565e589e14.ctex"
+path="res://.godot/imported/middle.png-777ee425453b52ee4f9e4e8e8296c87e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sunny-land/assets/environment/middle.png"
-dest_files=["res://.godot/imported/middle.png-c96597db32e866be1b3d3d565e589e14.ctex"]
+source_file="res://assets/sunny-land/assets/environment/middle.png"
+dest_files=["res://.godot/imported/middle.png-777ee425453b52ee4f9e4e8e8296c87e.ctex"]
 
 [params]
 
