@@ -12,6 +12,10 @@ var normal_time_start: int = -1
 @onready var enemies: Array[Enemy] = [$Akabei, $Pinky, $Aosuke, $Guzuta]
 
 
+func _ready():
+	get_tree().paused = true
+
+
 func _process(_delta):
 	if frightened_time_start > 0:
 		var frightened_time_elapsed = Time.get_ticks_msec() - frightened_time_start
@@ -59,3 +63,7 @@ func _on_money_taken():
 	frightened_time_start = Time.get_ticks_msec()
 	scatter_time_start = -1
 
+
+func _on_close_pressed():
+	$KuchiNorm/Guide.hide()
+	get_tree().paused = false

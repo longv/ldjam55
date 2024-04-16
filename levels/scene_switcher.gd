@@ -3,6 +3,7 @@ extends Node
 var current_scene = null
 var previous_scene = null
 var annoyance: String = "colleague"
+var showed: bool = false
 
 func _ready():
 	var root = get_tree().root

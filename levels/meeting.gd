@@ -49,6 +49,11 @@ func _ready():
 	var enemy = load("res://characters/enemies/annoying_colleagues/%s.tscn" % SceneSwitcher.annoyance).instantiate()
 	enemy.position = Vector2(1062, 0)
 	enemy.scale = Vector2(5, 5)
+	if not SceneSwitcher.showed:
+		get_tree().paused = true
+		SceneSwitcher.showed = true
+	else:
+		$Guide.hide()
 	call_deferred("add_child", enemy)
 	npc.text = "[center]%s[/center]" % SceneSwitcher.annoyance.capitalize()
 
@@ -128,3 +133,8 @@ func _clear_task_hud():
 	for child in task_hud.get_children():
 		child.visible = false
 
+
+
+func _on_close_pressed():
+	$Guide.hide()
+	get_tree().paused = false
