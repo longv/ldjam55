@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dodjhx85pvu8y"]
+[gd_scene load_steps=15 format=3 uid="uid://dodjhx85pvu8y"]
 
 [ext_resource type="Script" path="res://levels/meeting.gd" id="1_tpixr"]
 [ext_resource type="PackedScene" uid="uid://dl8r8lcdwbydj" path="res://levels/meeting_tilemap.tscn" id="2_2u8y7"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://i343kl2f343u" path="res://ui/hud/assets/UI_Flat_Button_Small_Lock_01a1.png" id="8_11ph4"]
 [ext_resource type="Texture2D" uid="uid://c1j4gla4nwtxe" path="res://ui/hud/assets/marble_spritesheet.png" id="8_187k1"]
 [ext_resource type="Texture2D" uid="uid://bekkjv43erksa" path="res://ui/hud/assets/switch_button_x.png" id="9_h1qex"]
+[ext_resource type="AudioStream" uid="uid://dk7wyjdtoeamw" path="res://levels/assets/DOS-88 - City Stomper.mp3" id="10_ojsbw"]
 
 [sub_resource type="Theme" id="Theme_vg8tl"]
 default_font_size = 12
@@ -222,5 +223,10 @@ offset_right = 98.0
 offset_bottom = 42.0
 scale = Vector2(0.1, 0.1)
 texture_normal = ExtResource("9_h1qex")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_ojsbw")
+autoplay = true
+mix_target = 1
 
 [connection signal="pressed" from="Guide/Close" to="." method="_on_close_pressed"]

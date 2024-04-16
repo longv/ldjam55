@@ -392,3 +392,6 @@ sprite_frames = SubResource("SpriteFrames_hfxvo")
 
 [node name="AnimationTree" parent="." index="3"]
 parameters/Idle/blend_position = Vector2(0.0274247, -0.0144358)
+
+[node name="NavigationAgent2D" parent="Navigation" index="0"]
+debug_enabled = false

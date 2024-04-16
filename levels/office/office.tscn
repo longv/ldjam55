@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://c4ydyqu55xvon"]
+[gd_scene load_steps=18 format=3 uid="uid://c4ydyqu55xvon"]
 
 [ext_resource type="Script" path="res://levels/office/office.gd" id="1_1ak5r"]
 [ext_resource type="PackedScene" uid="uid://c7u65acrpd0bp" path="res://characters/enemies/akabei/akabei.tscn" id="1_ikiby"]
@@ -12,8 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://byf6sm1wbnbt2" path="res://objects/home/home.tscn" id="9_dkya6"]
 [ext_resource type="Texture2D" uid="uid://bekkjv43erksa" path="res://ui/hud/assets/switch_button_x.png" id="10_40jk8"]
 [ext_resource type="Texture2D" uid="uid://bet8ldqtmnrcb" path="res://ui/hud/assets/Modern_Office_Singles_48x48_170.png" id="11_jk2xr"]
-[ext_resource type="Texture2D" uid="uid://c1j4gla4nwtxe" path="res://ui/hud/assets/marble_spritesheet.png" id="12_pmv8x"]
 [ext_resource type="AudioStream" uid="uid://drjnn423yekk0" path="res://levels/office/assets/DavidKBD - Tropical Pack - 01 - Spring Romance - Acoustic.ogg" id="11_s36p3"]
+[ext_resource type="Texture2D" uid="uid://c1j4gla4nwtxe" path="res://ui/hud/assets/marble_spritesheet.png" id="12_pmv8x"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_lmu7m"]
 vertices = PackedVector2Array(86, 310, 74, 310, 74, 298, 86, 298, 202, 154, 278, 149, 330, 149, 342, 202, 246, 214, 1066, 154, 1118, 182, 854, 182, 874, 170, 1014, 154, 790, 410, 790, 534, 778, 490, 778, 438, 822, 170, 810, 202, 810, 86, 822, 86, 854, 234, 662, 410, 694, 438, 682, 570, 682, 534, 694, 566, 694, 602, 726, 534, 694, 490, 490, 202, 502, 235, 502, 314, 374, 342, 362, 266, 362, 214, 438, 202, 918, 278, 842, 342, 714, 314, 714, 235, 202, 107, 278, 90, 74, 90, 118, 107, 74, 149, 118, 154, 586, 74, 586, 66, 630, 66, 630, 86, 598, 86, 650, 202, 650, 106, 662, 106, 662, 138, 714, 86, 682, 86, 682, 74, 886, 74, 938, 154, 938, 138, 1014, 138, 1066, 106, 1118, 106, 886, 154, 874, 86, 1118, 234, 1118, 278, 502, 202, 630, 235, 630, 246, 586, 246, 586, 235, 170, 342, 246, 266, 278, 266, 278, 298, 170, 394, 330, 298, 330, 266, 566, 314, 566, 330, 554, 342, 618, 330, 618, 298, 630, 298, 630, 314, 918, 362, 1118, 362, 1118, 438, 918, 438, 1002, 522, 1002, 490, 1014, 490, 1014, 522, 1098, 522, 1098, 490, 1118, 490, 1114, 566, 1118, 622, 1114, 622, 1062, 566, 1062, 622, 842, 622, 918, 522, 662, 342, 726, 566, 682, 506, 650, 534, 650, 506, 682, 470, 650, 470, 650, 459, 470, 459, 470, 470, 438, 470, 438, 506, 470, 506, 470, 534, 438, 534, 438, 570, 470, 570, 470, 586, 458, 598, 426, 598, 554, 586, 554, 554, 566, 554, 566, 586, 650, 586, 650, 570, 790, 602, 790, 622, 458, 622, 426, 410, 554, 410, 374, 622, 330, 622, 330, 438, 182, 522, 278, 522, 278, 622, 106, 618, 106, 566, 34, 622, 34, 618, 34, 566, 34, 522, 138, 522, 182, 438, 138, 438, 34, 438, 34, 394, 138, 342, 138, 246, 34, 246, 34, 149, 330, 74, 342, 74, 438, 86, 426, 66, 502, 66, 502, 74, 490, 86, 714, 138, 726, 202, 426, 202, 502, 86, 598, 202, 586, 86, 726, 86, 586, 202)
@@ -288,14 +288,12 @@ position = Vector2(768, 600)
 [node name="Money4" parent="MoneyPiles" instance=ExtResource("8_xseix")]
 position = Vector2(344, 104)
 
-
-[connection signal="pressed" from="KuchiNorm/Guide/Close" to="." method="_on_close_pressed"]
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_s36p3")
 autoplay = true
 mix_target = 1
 
+[connection signal="pressed" from="KuchiNorm/Guide/Close" to="." method="_on_close_pressed"]
 [connection signal="taken" from="MoneyPiles/Money" to="." method="_on_money_taken"]
 [connection signal="taken" from="MoneyPiles/Money2" to="." method="_on_money_2_taken"]
 [connection signal="taken" from="MoneyPiles/Money3" to="." method="_on_money_3_taken"]
