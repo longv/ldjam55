@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://levels/main.gd" id="1_3ui4e"]
 [ext_resource type="PackedScene" uid="uid://dl88or6dnb2eo" path="res://ui/background/background.tscn" id="2_3cymo"]
-[ext_resource type="Texture2D" uid="uid://dekqdc70d3wm3" path="res://Assets/play.png" id="3_u4k03"]
-[ext_resource type="Texture2D" uid="uid://k2tv05oohpkc" path="res://Assets/play_hover.png" id="4_2xamp"]
-[ext_resource type="AudioStream" uid="uid://d0irtxsc45atn" path="res://Assets/sunny-land/assets/sound/platformer_level03_loop.ogg" id="5_ppqj7"]
-[ext_resource type="Texture2D" uid="uid://4wjw6a478eb8" path="res://Assets/credits.png" id="6_oe4yf"]
+[ext_resource type="Texture2D" uid="uid://dekqdc70d3wm3" path="res://assets/play.png" id="3_u4k03"]
+[ext_resource type="Texture2D" uid="uid://k2tv05oohpkc" path="res://assets/play_hover.png" id="4_2xamp"]
+[ext_resource type="AudioStream" uid="uid://d0irtxsc45atn" path="res://assets/sunny-land/assets/sound/platformer_level03_loop.ogg" id="5_ppqj7"]
+[ext_resource type="Texture2D" uid="uid://4wjw6a478eb8" path="res://assets/credits.png" id="6_oe4yf"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_3ui4e")

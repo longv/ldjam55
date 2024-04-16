@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://dodjhx85pvu8y"]
 
-[ext_resource type="Texture2D" uid="uid://cnm6188k6yh2j" path="res://Assets/Modern_Office_Revamped/3_Modern_Office_Shadowless/Modern_Office_Shadowless_48x48.png" id="1_gwrqv"]
+[ext_resource type="Texture2D" uid="uid://cnm6188k6yh2j" path="res://assets/Modern_Office_Revamped/3_Modern_Office_Shadowless/Modern_Office_Shadowless_48x48.png" id="1_gwrqv"]
 [ext_resource type="Script" path="res://levels/meeting.gd" id="1_tpixr"]
 [ext_resource type="Texture2D" uid="uid://bjyq0eec2x7jy" path="res://levels/assets/Room_Builder_Office_48x48.png" id="2_4aop7"]
 [ext_resource type="PackedScene" uid="uid://c8r31sn518imi" path="res://characters/player/kuchi_the_salary_man/kuchi.tscn" id="2_xxawq"]
